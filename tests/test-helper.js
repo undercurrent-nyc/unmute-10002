@@ -1,7 +1,7 @@
-import Application from 'unmute/app';
-import config from 'unmute/config/environment';
-import { setApplication } from '@ember/test-helpers';
-import { start } from 'ember-qunit';
+import Application from "unmute/app";
+import config from "unmute/config/environment";
+import { setApplication } from "@ember/test-helpers";
+import { start } from "ember-qunit";
 
 setApplication(Application.create(config.APP));
 
