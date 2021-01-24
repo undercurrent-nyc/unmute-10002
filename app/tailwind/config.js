@@ -16,6 +16,13 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
 
+      unGreen: "#048e35",
+      unBrown: "#9b591e",
+      unPurple: "#6043ba",
+      unBlue: "#0963b5",
+      unRed: "#ff3000",
+      
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -171,6 +178,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        "myriad-pro",
         "ui-sans-serif",
         "system-ui",
         "-apple-system",
