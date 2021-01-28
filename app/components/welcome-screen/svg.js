@@ -86,16 +86,19 @@ export default class WelcomeScreenSvgComponent extends Component {
       .attr("transform", d => {
         return `translate(${d.offset}, ${-(d.strip.length -1) * yOffset})`;
       })
+      .on("end", this.showLaunching);
+  }
+
+  showLaunching(){
     select("g#svg-launching")
       .style("opacity", 0)
       .html(htmlSafe(launching))
       .transition()
-      .delay(5000)
+      .delay(0)
       .duration(1000)
       .style("opacity", 1);
-      
-
   }
+
 
   data = [
     {
