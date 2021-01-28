@@ -38,18 +38,6 @@ export default class WelcomeScreenSvgComponent extends Component {
   launchSlotMachine() {
     const yOffset = 100;
     const g = select("#svg-windows");
-    // const g = d3.select("#svg-windows");
-    this.data.splice(0, 0, {
-      offset: 0,
-      strip: [
-        "<g></g>",
-        "<g></g>",
-        "<g></g>",
-        "<g></g>",
-        "<g></g>",
-        "<g></g>",
-        un]
-    });
     g.selectAll("g")
       .data(this.data)
       .enter()
@@ -70,7 +58,11 @@ export default class WelcomeScreenSvgComponent extends Component {
                   .html(htmlSafe(d))
               });
         });
-    // d3.selectAll("g.numeral-window")
+
+    select("g#svg-un")
+      .attr("transform", `translate(0,${yOffset})`)
+      .html(htmlSafe(un));
+
     selectAll("g.numeral-window")
       .transition()
       .delay(1000)
@@ -86,19 +78,28 @@ export default class WelcomeScreenSvgComponent extends Component {
       .attr("transform", d => {
         return `translate(${d.offset}, ${-(d.strip.length -1) * yOffset})`;
       })
-      .on("end", this.showLaunching);
+      .on("end", this.showUn);
   }
 
-  showLaunching(){
-    select("g#svg-launching")
-      .style("opacity", 0)
-      .html(htmlSafe(launching))
+  showUn(){
+    const duration = 1500;
+    const delay = 500;
+    select("g#svg-un")
       .transition()
-      .delay(0)
-      .duration(1000)
-      .style("opacity", 1);
+      .delay(delay)
+      .duration(duration)
+      .ease(easeBack.overshoot(1))
+      .attr("transform", "translate(0,0)")
+      .on("end", () => {
+        return select("g#svg-launching")
+          .style("opacity", 0)
+          .html(htmlSafe(launching))
+          .transition()
+          .delay(0)
+          .duration(duration)
+          .style("opacity", 1);
+      });
   }
-
 
   data = [
     {
