@@ -136,10 +136,6 @@ export default class WelcomeScreenSvgComponent extends Component {
       zero4, zero5, zero6],
   ]
 
-  setScales(){
-    console.log(window.innerWidth, window.innerHeight);
-  }
-
   constructor() {
     super(...arguments);
     for (const wheel of this.data) {
@@ -153,7 +149,6 @@ export default class WelcomeScreenSvgComponent extends Component {
       wheel.strip.push(wheel.penultimate);
       wheel.strip.push(wheel.ultimate);
     }
-    this.setScales();
   }
 
   paths = {
