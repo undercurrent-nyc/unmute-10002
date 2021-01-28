@@ -1,11 +1,16 @@
-<main class="w-screen h-screen bg-unPurple text-white relative">
-  <header class="w-full bg-black absolute top-0 left-0 z-50">
-    <LinkTo @route="coming-soon">↘︎</LinkTo>
-  </header>
-  <div class="absolute top-0 left-0 z-0 w-full h-full">
-    <p>Video</p>
+<main class="welcome-screen w-screen h-screen bg-unPurple text-white relative">
+  <div class="w-full h-full flex flex-col justify-between z-50">
+    <header class="bg-black w-full z-50 text-right px-4">
+      <LinkTo @route="coming-soon">enter ↘︎</LinkTo>
+    </header>
+    <div class="bg-white text-black w-full z-50 px-4 py-2">
+      <p class="text-2xs">
+        An online residency, UN/MUTE provides European artists an opportunity to collaborate with a New York City–based network of artists.<br /> These transatlantic creative processes unfold over three months in video recordings giving everyone a voice — UN/MUTE yourself.
+      </p>
+    </div>
   </div>
-  <p>welcome screen</p>
+  <WelcomeScreen::Video @width={{this.videoWidth}} @height={{this.videoHeight}} />
+  <WelcomeScreen::Svg />
 </main>
 
 

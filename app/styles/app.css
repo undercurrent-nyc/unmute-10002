@@ -1,7 +1,21 @@
 @tailwind base;
 @tailwind components;
+
+/* @import "components.css"; */
+
 @tailwind utilities;
 
 body {
   @apply font-sans;
+}
+
+.video-wrapper iframe {
+  width: 100vw;
+  height: 56.25vw;
+  min-height: 100vh;
+  min-width: 177.77vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -1,0 +1,17 @@
+<div 
+  id="unmute-svg-container"
+  class="absolute top-0 left-0 w-full h-full flex justify-center items-center z-10">
+  <svg 
+    class="h-auto fill-current" 
+    width="50%"
+    viewBox="0 0 570 160"
+    {{did-insert this.waitAndLaunch}}>
+      <defs>
+        <clipPath id="svg-windows-mask">
+        <rect x={{this.gXOffset}} y={{this.gYOffset}} width="768" height="95" />
+        </clipPath>
+      </defs>
+      <g id="svg-windows" clip-path="url(#svg-windows-mask)"> </g>
+      <g id="svg-launching" transform="translate(200,124)"> </g>
+  </svg>
+</div>
