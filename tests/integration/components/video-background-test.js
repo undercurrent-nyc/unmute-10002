@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | welcome-screen/video', function(hooks) {
+module('Integration | Component | video-background', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<WelcomeScreen::Video />`);
+    await render(hbs`<VideoBackground />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <WelcomeScreen::Video>
+      <VideoBackground>
         template block text
-      </WelcomeScreen::Video>
+      </VideoBackground>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
