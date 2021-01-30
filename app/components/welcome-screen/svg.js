@@ -21,6 +21,8 @@ import zero6 from "unmute/svg-paths/zero6";
 import launching from "unmute/svg-paths/launching";
 import { select, selectAll } from "d3-selection";
 import { easeBack } from "d3-ease";
+// import { range } from "d3-range";
+// import { randomNormal, randomUniform } from "d3-random";
 import { transition } from "d3-transition";
 
 export default class WelcomeScreenSvgComponent extends Component {
@@ -153,68 +155,5 @@ export default class WelcomeScreenSvgComponent extends Component {
       wheel.strip.push(wheel.penultimate);
       wheel.strip.push(wheel.ultimate);
     }
-  }
-
-  paths = {
-    un: {
-      path: htmlSafe(un),
-      width: 158.76,
-      offset: 0,
-    },
-    slash: {
-      path: htmlSafe(slash),
-      width: 67.76,
-      offset: 158.76,
-    },
-    m: {
-      path: htmlSafe(m),
-      width: 91.86,
-      offset: 158.76 + 67.76,
-    },
-    u: {
-      path: htmlSafe(u),
-      width: 83.46,
-      offset: 158.76 + 67.76 + 91.86,
-    },
-    t: {
-      path: htmlSafe(t),
-      width: 83.46,
-      offset: 158.76 + 67.76 + 91.86 + 83.46,
-    },
-    e: {
-      path: htmlSafe(e),
-      width: 83.46,
-      offset: 158.76 + 67.76 + 91.86 + 83.46 + 83.46,
-    },
-    one1: {
-      path: htmlSafe(one1)
-    },
-    one2: {
-      path: htmlSafe(one2)
-    },
-    one3: {
-      path: htmlSafe(one3)
-    },
-    two: {
-      path: htmlSafe(two)
-    },
-    zero1: {
-      path: htmlSafe(zero1)
-    },
-    zero2: {
-      path: htmlSafe(zero2)
-    },
-    zero3: {
-      path: htmlSafe(zero3)
-    },
-    zero4: {
-      path: htmlSafe(zero4)
-    },
-    zero5: {
-      path: htmlSafe(zero5)
-    },
-    zero6: {
-      path: htmlSafe(zero6)
-    },
   }
 }
