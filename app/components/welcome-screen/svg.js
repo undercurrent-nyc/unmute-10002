@@ -1,5 +1,4 @@
 import Component from '@glimmer/component';
-import { tracked } from "@glimmer/tracking";
 import { action } from "@ember/object";
 import { htmlSafe } from '@ember/template';
 import un from "unmute/svg-paths/un-window-path";
@@ -21,8 +20,8 @@ import zero6 from "unmute/svg-paths/zero6";
 import launching from "unmute/svg-paths/launching";
 import { select, selectAll } from "d3-selection";
 import { easeBack } from "d3-ease";
-// import { range } from "d3-range";
-// import { randomNormal, randomUniform } from "d3-random";
+import { range } from "d3-array";
+import { randomNormal, randomUniform } from "d3-random";
 import { transition } from "d3-transition";
 
 export default class WelcomeScreenSvgComponent extends Component {
@@ -45,6 +44,7 @@ export default class WelcomeScreenSvgComponent extends Component {
       .enter()
         .insert("g")
         .attr("class", (_, i) => `numeral-window window-${i}`)
+        .style("opacity", 0)
         .attr("transform", d => `translate(${d.offset},${yOffset})`)
         .each(function(d) {
           select(this)
@@ -53,7 +53,7 @@ export default class WelcomeScreenSvgComponent extends Component {
             .enter()
               .insert("g")
               .attr("transform", (_, i) => {
-                return `translate(0, ${yOffset * i})`
+                return `translate(0, ${yOffset * (i - 1)})`
               })
               .each(function(d) {
                 select(this)
@@ -67,20 +67,26 @@ export default class WelcomeScreenSvgComponent extends Component {
 
     selectAll("g.numeral-window")
       .transition()
-      .delay(1000)
-      .duration(2000)
-      .ease(easeBack.overshoot(1))
-      .attr("transform", d => {
-        return `translate(${d.offset}, ${-(d.strip.length -2) * yOffset})`;
-      })
+      .duration(500)
+      .style("opacity", 1)
       .transition()
-      .delay(500)
-      .duration(1500)
+      .delay(2000)
+      .duration(d => d.transition)
       .ease(easeBack.overshoot(1))
       .attr("transform", d => {
-        return `translate(${d.offset}, ${-(d.strip.length -1) * yOffset})`;
+        return `translate(${d.offset}, ${-(d.strip.length -3) * yOffset})`;
       })
-      .on("end", this.showUn);
+      .on("end", () => {
+        selectAll("g.numeral-window")
+          .transition()
+          .delay(2500)
+          .duration(d => d.secondTransition)
+          .ease(easeBack.overshoot(1))
+          .attr("transform", d => {
+            return `translate(${d.offset}, ${-(d.strip.length -2) * yOffset})`;
+          })
+          .on("end", this.showUn);
+      });
   }
 
   showUn(){
@@ -136,24 +142,31 @@ export default class WelcomeScreenSvgComponent extends Component {
     },
   ]
 
-  numerals = [
-    [one1, one2, one3],
-    [zero1, zero2, zero3,
-      zero4, zero5, zero6],
-  ]
+  pickNumber() {
+    const numerals = [
+      [one1, one2, one3],
+      [zero1, zero2, zero3,
+        zero4, zero5, zero6],
+    ];
+    const numeral = numerals[Math.floor(Math.random() * 2)];
+    return numeral[Math.floor(Math.random() * numeral.length)];
+  }
+
 
   constructor() {
     super(...arguments);
     for (const wheel of this.data) {
-      let i = 2;
+      
+      let i = 10 + randomNormal(32, 8)();
       // let i = Math.floor(Math.random() * 10);
-      while (i < 10){
-        i += 1;
-        const numeral = this.numerals[Math.floor(Math.random() * 2)]
-        wheel.strip.push(numeral[Math.floor(Math.random() * numeral.length)]);
+      while (i > 0){
+        i -= 1;
+        wheel.strip.push(this.pickNumber());
       }
       wheel.strip.push(wheel.penultimate);
       wheel.strip.push(wheel.ultimate);
+      wheel.transition = Math.floor(randomNormal(2500, 500)());
+      wheel.secondTransition = Math.floor(randomNormal(1000, 300)());
     }
   }
 }
