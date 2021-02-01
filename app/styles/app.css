@@ -29,7 +29,7 @@ body {
 }
 
 .video-image-overlay {
-  background-size: 16px 16px;
+  background-size: 6%;
   background-image: url(/assets/png/checkerboard.png);
   background-position: center;
   image-rendering: pixelated;
