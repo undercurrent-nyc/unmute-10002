@@ -59,7 +59,7 @@ export default class FooterComponent extends Component {
     shuffledCountries.splice(11, 0, {
       website: "https://eunicglobal.eu",
       name: "eunic-eu",
-      extraClass: "col-span-3",
+      extraClass: "col-span-2 md:col-span-3",
     });
 
     return shuffledCountries;
