@@ -5,15 +5,15 @@ export default class FooterComponent extends Component {
   get logos() {
     const shuffledCountries = shuffle([
       {
-        website: "",
+        website: "https://www.sjch.cz/en/",
         name: "chalupecky",
       },
       {
-        website: "",
+        website: "https://new-york.czechcentres.cz",
         name: "czech",
       },
       {
-        website: "https://kul.ee/en",
+        website: "https://www.visitestonia.com/en/what-to-see-do/history-and-culture/",
         name: "estonia",
       },
       {
@@ -21,11 +21,11 @@ export default class FooterComponent extends Component {
         name: "flanders",
       },
       {
-        website: "",
+        website: "https://www.goethe.de/ins/us/en/sta/ney.html",
         name: "german",
       },
       {
-        website: "",
+        website: "http://www.h-r-s.cz",
         name: "hope",
       },
       {
@@ -37,15 +37,15 @@ export default class FooterComponent extends Component {
         name: "malta",
       },
       {
-        website: "https://www.instytutpolski.pl/newyork/",
+        website: "http://instytutpolski.pl/newyork/",
         name: "poland",
       },
       {
-        website: "",
+        website: "http://www.rciusa.info",
         name: "romanian",
       },
       {
-        website: "",
+        website: "http://wallonia.us/en",
         name: "wallonia"
       }
     ]);
