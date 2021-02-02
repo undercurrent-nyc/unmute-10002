@@ -13,6 +13,10 @@ export default class FooterComponent extends Component {
         name: "czech",
       },
       {
+        website: "https://newyork.mfa.ee/",
+        name: "estonia-consulate",
+      },
+      {
         website: "https://www.visitestonia.com/en/what-to-see-do/history-and-culture/",
         name: "estonia",
       },
@@ -55,11 +59,11 @@ export default class FooterComponent extends Component {
       name: "austria",
       extraClass: "row-span-2",
     });
-    // EUNIC has to be index 11.
-    shuffledCountries.splice(11, 0, {
+    // EUNIC has to be index 13.
+    shuffledCountries.splice(13, 0, {
       website: "https://eunicglobal.eu",
       name: "eunic-eu",
-      extraClass: "col-span-2 md:col-span-3",
+      extraClass: "col-span-2 md:col-span-2",
     });
 
     return shuffledCountries;
