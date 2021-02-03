@@ -50,9 +50,9 @@ future.
 [Aaron Bezzina](https://www.aaronbezzina.com) (Malta),
 [Will Calhoun](https://willcalhoun.com) (NYC), 
 [Sanne De Wilde](http://sannedewilde.com/) (Flanders, Belgium), 
-[FOQL](https://soundsfoolish.com/] (Poland),
-[Gabriele Gervickaite](http://www.gabrielegervickaite.com) (Lithuania), 
-[Kris Grey](https://kristingrey.com] (NYC), 
+[FOQL](https://soundsfoolish.com/) (Poland),
+[Gabrielė Gervickaitė](http://www.gabrielegervickaite.com) (Lithuania), 
+[Kris Grey](https://kristingrey.com) (NYC), 
 [Sophie Guisset](http://www.facebook.com/sophie.guisset.50)
 (Wallonia-Brussels, Belgium), 
 [Kyle Hittmeier](http://www.kylehittmeier.com) (NYC), 
