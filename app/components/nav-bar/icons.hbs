@@ -1,11 +1,24 @@
-<div class="flex flex-row space-x-5">
-  <a href="http://undercurrent.nyc">
-    {{svg-jar "undercurrent" class="h-7"}}
+<div class="flex flex-row space-x-2 md:space-x-4 relative pt-2">
+  <a role="button" href="http://undercurrent.nyc">
+    {{svg-jar "undercurrent" class="h-4 md:h-7"}}
   </a>
-  <a href="http://facebook.com/undercurrent.nyc/">
-    {{svg-jar "facebook-official" class="h-7"}}
+  <a role="button" href="http://facebook.com/undercurrent.nyc/">
+    {{svg-jar "facebook-official" class="h-4 md:h-7"}}
   </a>
-  <a href="http://instagram.com/undercurrent.nyc">
-    {{svg-jar "instagram" class="h-7"}}
+  <a role="button" href="http://instagram.com/undercurrent.nyc">
+    {{svg-jar "instagram" class="h-4 md:h-7"}}
   </a>
+  <a href="#" role="button" {{on "click" this.toggleDropdown}}>
+    {{svg-jar "bars" class="h-4 md:hidden" aria-hidden="true"}}
+  </a>
+  <div class="{{if this.hiddenDropdown "hidden"}} nav-dropdown-menu absolute w-28 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+    <ul class="py-2" role="menu" aria-orientation="vertical" aria-labelledby="nav-dropdown-menu">
+      <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about" class="text-unPurple nav-about">/about</LinkTo></li>
+      <!-- <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about">/teams</LinkTo></li> -->
+      <!-- <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about">/artists</LinkTo></li> -->
+      <!-- <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about">/podcast</LinkTo></li> -->
+      <li class="block px-4 py-1 text-xs" role="menuitem"><a href="http://undercurrent.nyc/signup" class="text-unRed">/get updates</a></li>
+      <li class="block px-4 py-1 text-xs" role="menuitem"><a href="http://10001.undercurrent.nyc" class="text-unPurple">/10001</a></li>
+    </ul>
+  </div>
 </div>

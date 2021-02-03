@@ -10,8 +10,9 @@ body {
   @apply font-sans overflow-x-hidden;
 }
 
-.text-box {
-  @apply text-justify text-lg leading-loose;
+.nav-dropdown-menu {
+  left: 2.75rem;
+  top: 1.75rem;
 }
 
 .text-box h2 {

@@ -1,4 +1,10 @@
-<section class="text-{{@color}} text-box">
+<section class="
+  text-{{@color}} 
+  text-justify 
+  text-base md:text-lg 
+  md:leading-loose
+  text-box
+  ">
 {{yield}}
   {{#if @markdownPath}}
     {{markdown-to-html (get-markdown-content "docs" @markdownPath)}}
