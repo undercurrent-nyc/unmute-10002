@@ -1,0 +1,6 @@
+<section class="text-box">
+{{yield}}
+  {{#if @markdownPath}}
+    {{markdown-to-html (get-markdown-content "docs" @markdownPath)}}
+  {{/if}}
+</section>
