@@ -33,7 +33,7 @@ export default class FooterComponent extends Component {
         name: "hope",
       },
       {
-        website: "https:/english.lithuanianculture.lt/",
+        website: "https://english.lithuanianculture.lt/",
         name: "lithuania",
       },
       {
