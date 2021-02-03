@@ -6,6 +6,11 @@ module.exports = function (environment) {
     environment,
     rootURL: "/",
     locationType: "auto",
+    "ember-cli-markdown-resolver": {
+      folders: {
+        docs: "app/markdown"
+      },
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
