@@ -7,7 +7,7 @@
 @import "tailwindcss/utilities";
 
 body {
-  @apply font-sans overflow-x-hidden;
+  @apply font-sans overflow-x-hidden font-abnormal;
 }
 
 .nav-dropdown-menu {
@@ -16,7 +16,7 @@ body {
 }
 
 .text-box h2 {
-  @apply font-semibold text-3xl;
+  @apply text-2xl font-medium;
 }
 
 .text-box p {

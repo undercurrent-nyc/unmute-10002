@@ -2,8 +2,10 @@
 
 /February 12 – May 9, 2021
 
-/Please join us, February 12, 1pm EST to the launching of our project UN/MUTE-10002 
-At facebook.com/undercurrent.nyc
+/Join us, February 12, 1pm EST to launch our project UN/MUTE-10002 
+on [Facebook](http://facebook.com/undercurrent.nyc) and follow the project
+here at http://unmute.nyc.
+
 
 /Creating a fair and equitable space after COVID shuttered artists from
 residencies, travel, studio visits, exhibitions, and physical networking,
@@ -88,3 +90,4 @@ International in New York](http://wallonia.us/en),
 [Hope Recycling Station](http://www.h-r-s.cz), 
 the [Jindřich Chalupecký Society](http://www.sjch.cz/en/”), and supported by the European Union
 Delegation to the United Nations.
+
