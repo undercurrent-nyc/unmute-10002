@@ -10,6 +10,26 @@ body {
   @apply font-sans overflow-x-hidden;
 }
 
+.text-box {
+  @apply text-justify text-lg leading-loose;
+}
+
+.text-box h2 {
+  @apply font-semibold text-3xl;
+}
+
+.text-box p {
+  @apply pb-10;
+}
+
+.unmute-logo {
+  width: 28%;
+}
+
+.nav-about.active {
+  @apply text-unPurple underline;
+}
+
 .video-wrapper iframe {
   width: 100vw;
   height: 56.25vw;

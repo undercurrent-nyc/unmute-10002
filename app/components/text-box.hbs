@@ -1,4 +1,4 @@
-<section class="text-box">
+<section class="text-{{@color}} text-box">
 {{yield}}
   {{#if @markdownPath}}
     {{markdown-to-html (get-markdown-content "docs" @markdownPath)}}
