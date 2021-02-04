@@ -79,7 +79,7 @@ export default class WelcomeScreenSvgComponent extends Component {
       .on("end", () => {
         selectAll("g.numeral-window")
           .transition()
-          .delay(1500)
+          .delay(1000)
           .duration(d => d.secondTransition)
           .ease(easeBack.overshoot(1))
           .attr("transform", d => {
@@ -165,8 +165,8 @@ export default class WelcomeScreenSvgComponent extends Component {
       }
       wheel.strip.push(wheel.penultimate);
       wheel.strip.push(wheel.ultimate);
-      wheel.transition = Math.floor(randomNormal(2500, 250)());
-      wheel.secondTransition = Math.floor(randomNormal(1000, 200)());
+      wheel.transition = Math.floor(randomNormal(2500, 200)());
+      wheel.secondTransition = Math.floor(randomNormal(1000, 100)());
     }
   }
 }
