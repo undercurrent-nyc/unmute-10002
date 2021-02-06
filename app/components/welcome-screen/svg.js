@@ -17,7 +17,6 @@ import zero3 from "unmute/svg-paths/zero3";
 import zero4 from "unmute/svg-paths/zero4";
 import zero5 from "unmute/svg-paths/zero5";
 import zero6 from "unmute/svg-paths/zero6";
-import launching from "unmute/svg-paths/launching";
 import { select, selectAll } from "d3-selection";
 import { easeBack } from "d3-ease";
 import { range } from "d3-array";
@@ -97,16 +96,7 @@ export default class WelcomeScreenSvgComponent extends Component {
       .delay(delay)
       .duration(duration)
       .ease(easeBack.overshoot(1))
-      .attr("transform", "translate(0,0)")
-      .on("end", () => {
-        return select("g#svg-launching")
-          .style("opacity", 0)
-          .html(htmlSafe(launching))
-          .transition()
-          .delay(0)
-          .duration(duration)
-          .style("opacity", 1);
-      });
+      .attr("transform", "translate(0,0)");
   }
 
   data = [
