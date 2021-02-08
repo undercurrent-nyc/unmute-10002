@@ -23,4 +23,7 @@ export default function() {
 
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
+  this.resource("artist");
+  this.resource("clip");
+  this.resource("team");
 }

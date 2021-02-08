@@ -6,6 +6,9 @@ module.exports = function (environment) {
     environment,
     rootURL: "/",
     locationType: "auto",
+    "ember-cli-mirage": {
+      enabled: true
+    },
     "ember-cli-markdown-resolver": {
       folders: {
         docs: "app/markdown"
@@ -50,6 +53,7 @@ module.exports = function (environment) {
 
   if (environment === "production") {
     // here you can enable a production-specific feature
+    ENV["ember-cli-mirage"].enabled = true;
   }
 
   return ENV;
