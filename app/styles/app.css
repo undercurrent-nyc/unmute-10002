@@ -31,6 +31,14 @@ body {
   @apply text-unPurple underline;
 }
 
+.nav-teams.active {
+  @apply text-unGreen underline;
+}
+
+.nav-artists.active {
+  @apply text-unBlue underline;
+}
+
 .video-wrapper iframe {
   width: 100vw;
   height: 56.25vw;

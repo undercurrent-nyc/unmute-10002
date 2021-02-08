@@ -1,7 +1,7 @@
 export default [
   {
     displayName: "Aaron Bezzina",
-    slug: "aaron-bezzina",
+    id: "aaron-bezzina",
     pronouns: "he/him/his",
     imgUrl: "",
     url: "https://www.aaronbezzina.com",
@@ -13,7 +13,7 @@ export default [
   },
   {
     displayName: "Alex Mirutziu",
-    slug: "alex-mirutziu",
+    id: "alex-mirutziu",
     pronouns: "he/him/his",
     imgUrl: "",
     url: "http://www.alexmirutziu.com",
@@ -25,7 +25,7 @@ export default [
   },
   {
     displayName: "Barbara Maria Neu",
-    slug: "barbara-maria-neu",
+    id: "barbara-maria-neu",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://barbaramarianeu.at",
@@ -37,7 +37,7 @@ export default [
   },
   {
     displayName: "Emily Shanahan",
-    slug: "emily-shanahan",
+    id: "emily-shanahan",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://www.emilyshanahan.com",
@@ -49,7 +49,7 @@ export default [
   },
   {
     displayName: "Emmanuel Massillon",
-    slug: "emmanuel-massillon",
+    id: "emmanuel-massillon",
     pronouns: "he/him/his",
     imgUrl: "",
     url: "https://www.emmanuel-massillon.com",
@@ -61,7 +61,7 @@ export default [
   },
   {
     displayName: "Eren Aksu",
-    slug: "eren-aksu",
+    id: "eren-aksu",
     pronouns: "he/him/his",
     imgUrl: "",
     url: "http://eren-aksu.com",
@@ -73,7 +73,7 @@ export default [
   },
   {
     displayName: "H. Lan Thao Lam",
-    slug: "h-lan-thao-lam",
+    id: "h-lan-thao-lam",
     pronouns: "they/their",
     imgUrl: "",
     url: "http://www.hlanthaolam.com/",
@@ -85,7 +85,7 @@ export default [
   },
   {
     displayName: "Gabrielė Gervickaitė",
-    slug: "gabriele-gervickaite",
+    id: "gabriele-gervickaite",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://www.gabrielegervickaite.com",
@@ -97,7 +97,7 @@ export default [
   },
   {
     displayName: "FOQL",
-    slug: "foql",
+    id: "foql",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "https://soundsfoolish.com/",
@@ -109,7 +109,7 @@ export default [
   },
   {
     displayName: "Kris Grey",
-    slug: "kris-grey",
+    id: "kris-grey",
     pronouns: "pronoun flexible: he/him/she/her/they/them",
     imgUrl: "",
     url: "https://kristingrey.com",
@@ -121,7 +121,7 @@ export default [
   },
   {
     displayName: "Kyle Hittmeier",
-    slug: "kyle-hittmeier",
+    id: "kyle-hittmeier",
     pronouns: "he/him/his",
     imgUrl: "",
     url: "http://www.kylehittmeier.com",
@@ -133,7 +133,7 @@ export default [
   },
   {
     displayName: "Marie Lukáčová",
-    slug: "marie-lukacova",
+    id: "marie-lukacova",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "https://www.marielukacova.com",
@@ -145,7 +145,7 @@ export default [
   },
   {
     displayName: "Mo Kong",
-    slug: "mo-kong",
+    id: "mo-kong",
     pronouns: "they/them/their",
     imgUrl: "",
     url: "https://mokongmo.com",
@@ -157,7 +157,7 @@ export default [
   },
   {
     displayName: "Olesja Katšanovskaja-Münd",
-    slug: "olesja-katsanovskaja-mund",
+    id: "olesja-katsanovskaja-mund",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://solaye.com/",
@@ -169,7 +169,7 @@ export default [
   },
   {
     displayName: "Sanne de Wilde",
-    slug: "sanne-de-wilde",
+    id: "sanne-de-wilde",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://sannedewilde.com/",
@@ -181,7 +181,7 @@ export default [
   },
   {
     displayName: "Sheila Maldonado",
-    slug: "sheila-maldonado",
+    id: "sheila-maldonado",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://sheilamaldonado.com",
@@ -193,7 +193,7 @@ export default [
   },
   {
     displayName: "Sophie Guisset",
-    slug: "sophie-guisset",
+    id: "sophie-guisset",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://www.facebook.com/sophie.guisset.50",
@@ -205,7 +205,7 @@ export default [
   },
   {
     displayName: "Sydney Shavers",
-    slug: "sydney-shavers",
+    id: "sydney-shavers",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "https://www.sydneyshavers.net/",
@@ -217,7 +217,7 @@ export default [
   },
   {
     displayName: "Will Calhoun",
-    slug: "will-calhoun",
+    id: "will-calhoun",
     pronouns: "he/him/his",
     imgUrl: "",
     url: "https://willcalhoun.com",
@@ -229,7 +229,7 @@ export default [
   },
   {
     displayName: "Yi Hsuan Lai",
-    slug: "yi-hsuan-lai",
+    id: "yi-hsuan-lai",
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "https://www.flaneurshan.com/",

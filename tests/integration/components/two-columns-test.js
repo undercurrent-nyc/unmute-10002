@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-qunit';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | main', function(hooks) {
+module('Integration | Component | two-columns', function(hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<Main />`);
+    await render(hbs`<TwoColumns />`);
 
     assert.equal(this.element.textContent.trim(), '');
 
     // Template block usage:
     await render(hbs`
-      <Main>
+      <TwoColumns>
         template block text
-      </Main>
+      </TwoColumns>
     `);
 
     assert.equal(this.element.textContent.trim(), 'template block text');
