@@ -67,19 +67,19 @@ body {
 }
 
 
-.active rect.red.inverse, .active polygon.green, rect.red, rect.green.inverse, polygon.green {
+.clip-tile.active rect.red.inverse, .clip-tile.active polygon.green, rect.red, rect.green.inverse, polygon.green {
   fill: #ff3000;
 }
-.active rect.green.inverse, .active polygon.red, rect.green, rect.red.inverse, polygon.red {
+.clip-tile.active rect.green.inverse, .clip-tile.active polygon.red, rect.green, rect.red.inverse, polygon.red {
   fill: #048e35;
 }
-.active rect.brown.inverse, .active polygon.blue, .active polygon.purple, rect.brown, rect.blue.inverse, rect.purple.inverse, polygon.purple, polygon.blue {
+.clip-tile.active rect.brown.inverse, .clip-tile.active polygon.blue, .clip-tile.active polygon.purple, rect.brown, rect.blue.inverse, rect.purple.inverse, polygon.purple, polygon.blue {
   fill: #9b591e;
 }
-.active rect.blue.inverse, .active polygon.brown, rect.blue, rect.brown.inverse, polygon.brown {
+.clip-tile.active rect.blue.inverse, .clip-tile.active polygon.brown, rect.blue, rect.brown.inverse, polygon.brown {
   fill: #0963b5;
 }
-.active rect.purple.inverse, rect.purple {
+.clip-tile.active rect.purple.inverse, rect.purple {
   fill: #6043ba;
 }
 
@@ -94,7 +94,7 @@ polygon.inverse {
   overflow: hidden;
 }
 
-.active polygon.inverse.brown {
+.clip-tile.active polygon.inverse.brown {
   fill: #0963b5;
 }
 
