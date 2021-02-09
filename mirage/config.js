@@ -27,4 +27,5 @@ export default function() {
   this.resource("team");
 
   this.passthrough("https://api.airtable.com/**");
+  this.passthrough("https://youtube.googleapis.com/**");
 }

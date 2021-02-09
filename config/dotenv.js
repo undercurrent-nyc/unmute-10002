@@ -6,7 +6,7 @@ const path = require('path');
 
 module.exports = function(/* env */) {
   return {
-    clientAllowedKeys: ["AIRTABLE_API_KEY"],
+    clientAllowedKeys: ["AIRTABLE_API_KEY", "YOUTUBE_API_KEY"],
     fastbootAllowedKeys: [],
     failOnMissingKey: false,
     path: path.join(path.dirname(__dirname), '.env')

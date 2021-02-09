@@ -1,10 +1,1 @@
-<article class="
-  flex flex-col md:flex-row-reverse
-  ">
-in the clip.
-{{log @model}}
-{{@model.clip.id}}
-
-{{@model.clip.team.name}}
-</article>
-
+<VideoContainer @description={{@model.description}} @clip={{@model.clip}} />
