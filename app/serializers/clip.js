@@ -17,6 +17,7 @@ export default class ClipSerializer extends RESTSerializer {
 
       payload[modelNamePlural].forEach(record => {
         record.youtubeUrl = record.fields.youtubeUrl;
+        record.date = record.fields.date;
         record.id = record.youtubeUrl.replace("https://youtu.be/", "");
         record.team = record.fields.teamId
         delete record.createdTime;

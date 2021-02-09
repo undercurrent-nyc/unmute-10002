@@ -1,19 +1,21 @@
-<div class="
-  w-1/3 md:w-1/4
+<LinkTo 
+  @route="clips.clip"
+  @model={{@clip.id}}
+  class="
+  w-full
   flex flex-col
   ">
   <ClipIcon @color={{if @clip.team @clip.team.color "purple"}} />
  <div class="
-   pt-6
-   pl-5
-   text-lg
+   pt-1 md:pt-6
+   pl-2 md:pl-5
    font-semibold text-un{{if @clip.team @clip.team.color "purple"}}">
-   <p class="text-xl">03/25</p>
-   <p class="pt-4 pb-2 text-3xl uppercase">{{if @clip.team @clip.team.name "LOTTERY"}}</p>
+   <p class="text-2xs font-bold md:font-semibold md:text-xl">{{@clip.date}}</p>
+   <p class="pt-1 md:pt-4 pb-0 md:pb-2 text-xs md:text-3xl uppercase">{{if @clip.team @clip.team.name "LOTTERY"}}</p>
    {{#if @clip.team}}
      {{#each @clip.team.artists as |artist|}}
-       <p class="font-abnormal text-xl">{{artist.displayName}}</p>
+       <p class="font-normal md:font-abnormal text-2xs md:text-xl tracking-wide">{{artist.displayName}}</p>
      {{/each}}
    {{/if}}
  </div>
-</div>
+</LinkTo>
