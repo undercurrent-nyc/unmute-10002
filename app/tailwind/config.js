@@ -16,11 +16,11 @@ module.exports = {
       transparent: "transparent",
       current: "currentColor",
 
-      unGreen: "#048e35",
-      unBrown: "#9b591e",
-      unPurple: "#6043ba",
-      unBlue: "#0963b5",
-      unRed: "#ff3000",
+      ungreen: "#048e35",
+      unbrown: "#9b591e",
+      unpurple: "#6043ba",
+      unblue: "#0963b5",
+      unred: "#ff3000",
       
 
       black: colors.black,

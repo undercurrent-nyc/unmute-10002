@@ -28,15 +28,15 @@ body {
 }
 
 .nav-about.active {
-  @apply text-unPurple underline;
+  @apply text-unpurple underline;
 }
 
 .nav-teams.active {
-  @apply text-unGreen underline;
+  @apply text-ungreen underline;
 }
 
 .nav-artists.active {
-  @apply text-unBlue underline;
+  @apply text-unblue underline;
 }
 
 .video-wrapper iframe {
@@ -64,4 +64,25 @@ body {
   image-rendering: pixelated;
   display: block;
   @apply absolute top-0 left-0 bottom-0 right-0 z-0 h-full w-full;
+}
+
+
+rect.red, rect.green.inverse, polygon.green {
+  fill: #ff3000;
+}
+rect.green, rect.red.inverse, polygon.red {
+  fill: #048e35;
+}
+rect.brown, rect.blue.inverse, rect.purple.inverse, polygon.purple, polygon.blue {
+  fill: #9b591e;
+}
+rect.blue, rect.brown.inverse, polygon.brown {
+  fill: #0963b5;
+}
+rect.purple{
+  fill: #6043ba;
+}
+
+polygon.inverse {
+  fill: white;
 }

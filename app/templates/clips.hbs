@@ -1,3 +1,8 @@
 <Container>
-  {{outlet}}
+{{outlet}}
+<Grid>
+  {{#each @model.clips as |clip|}}
+    <ClipTile @clip={{clip}} />
+  {{/each}}
+</Grid>
 </Container>

@@ -1,0 +1,13 @@
+<div class="w-full"
+   role="button"
+   {{on "mouseover" this.invert}}
+   {{on "mouseout" this.deinvert}}
+   >
+ <svg 
+   class="pointer-events-none w-full clip-icon" viewBox="0 0 222.82 222.51">
+   <rect class="invertable {{@color}} inverse" width="208.93" height="208.93"/>
+   <rect class="{{@color}}" x="12.02" y="11.71" width="210.8" height="210.8"/>
+   <polygon class="invertable {{@color}} inverse" points="135.52 117.11 117.42 106.67 99.33 96.22 99.33 117.11 99.33 138 117.42 127.56 135.52 117.11"/>
+ </svg>
+</div>
+

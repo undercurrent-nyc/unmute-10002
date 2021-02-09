@@ -9,5 +9,5 @@ export default class ArtistModel extends Model {
   @attr("string") other;
   @attr("string") country;
   @attr("string") generation;
-  @belongsTo("team") team;
+  @belongsTo("team", { async: false }) team;
 }

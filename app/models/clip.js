@@ -1,6 +1,6 @@
 import Model, { belongsTo, attr } from '@ember-data/model';
 
 export default class ClipModel extends Model {
-  @belongsTo("team") team;
+  @belongsTo("team", { async: false }) team;
   @attr("string") youtubeUrl;
 }

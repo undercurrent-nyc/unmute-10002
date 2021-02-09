@@ -9,7 +9,7 @@ export default [
     other: "",
     country: "Malta",
     generation: "native",
-    teamId: "mouse"
+    //teamId: "mouse"
   },
   {
     displayName: "Alex Mirutziu",
@@ -17,11 +17,11 @@ export default [
     pronouns: "he/him/his",
     imgUrl: "",
     url: "http://www.alexmirutziu.com",
-    instagram: "",
+    instagram: "@alexmirutziu",
     other: "https://www.facebook.com/oralityofdecor",
     country: "Romania",
     generation: "immigrant",
-    teamId: "branch"
+    //teamId: "branch"
   },
   {
     displayName: "Barbara Maria Neu",
@@ -33,7 +33,7 @@ export default [
     other: "",
     country: "Austria",
     generation: "native",
-    teamId: "profile"
+    //teamId: "profile"
   },
   {
     displayName: "Emily Shanahan",
@@ -45,7 +45,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "immigrant",
-    teamId: "stream"
+    //teamId: "stream"
   },
   {
     displayName: "Emmanuel Massillon",
@@ -57,7 +57,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "native",
-    teamId: "cloud"
+    //teamId: "cloud"
   },
   {
     displayName: "Eren Aksu",
@@ -69,7 +69,7 @@ export default [
     other: "",
     country: "Germany",
     generation: "native",
-    teamId: "thumbnail"
+    //teamId: "thumbnail"
   },
   {
     displayName: "H. Lan Thao Lam",
@@ -81,7 +81,7 @@ export default [
     other: "https://www.facebook.com/h.lanthao.lam/",
     country: "NYC",
     generation: "immigrant",
-    teamId: "bug"
+    //teamId: "bug"
   },
   {
     displayName: "Gabrielė Gervickaitė",
@@ -89,11 +89,11 @@ export default [
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://www.gabrielegervickaite.com",
-    instagram: "",
+    instagram: "@gabecosmo",
     other: "https://www.facebook.com/GabieleGervickaite",
     country: "Lithuania",
     generation: "immigrant",
-    teamId: "ram"
+    //teamId: "ram"
   },
   {
     displayName: "FOQL",
@@ -105,7 +105,7 @@ export default [
     other: "",
     country: "Poland",
     generation: "immigrant",
-    teamId: "cloud"
+    //teamId: "cloud"
   },
   {
     displayName: "Kris Grey",
@@ -117,7 +117,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "immigrant",
-    teamId: "profile"
+    //teamId: "profile"
   },
   {
     displayName: "Kyle Hittmeier",
@@ -129,7 +129,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "immigrant",
-    teamId: "mouse"
+    //teamId: "mouse"
   },
   {
     displayName: "Marie Lukáčová",
@@ -141,7 +141,7 @@ export default [
     other: "",
     country: "Czech Republic",
     generation: "native",
-    teamId: "stream"
+    //teamId: "stream"
   },
   {
     displayName: "Mo Kong",
@@ -153,7 +153,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "native",
-    teamId: "web"
+    //teamId: "web"
   },
   {
     displayName: "Olesja Katšanovskaja-Münd",
@@ -165,7 +165,7 @@ export default [
     other: "https://www.facebook.com/solaye.nova",
     country: "Estonia",
     generation: "immigrant",
-    teamId: "web"
+    //teamId: "web"
   },
   {
     displayName: "Sanne de Wilde",
@@ -177,7 +177,7 @@ export default [
     other: "",
     country: "Flanders, Belgium",
     generation: "native",
-    teamId: "bug"
+    //teamId: "bug"
   },
   {
     displayName: "Sheila Maldonado",
@@ -189,7 +189,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "immigrant",
-    teamId: "thumbnail"
+    //teamId: "thumbnail"
   },
   {
     displayName: "Sophie Guisset",
@@ -197,11 +197,11 @@ export default [
     pronouns: "she/her/hers",
     imgUrl: "",
     url: "http://www.facebook.com/sophie.guisset.50",
-    instagram: "",
+    instagram: "@guissetsophie",
     other: "",
     country: "Wallonia-Brussels, Belgium",
     generation: "native",
-    teamId: "key"
+    //teamId: "key"
   },
   {
     displayName: "Sydney Shavers",
@@ -213,7 +213,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "native",
-    teamId: "branch"
+    //teamId: "branch"
   },
   {
     displayName: "Will Calhoun",
@@ -225,7 +225,7 @@ export default [
     other: "",
     country: "NYC",
     generation: "immigrant",
-    teamId: "key"
+    //teamId: "key"
   },
   {
     displayName: "Yi Hsuan Lai",
@@ -237,6 +237,6 @@ export default [
     other: "",
     country: "NYC",
     generation: "native",
-    teamId: "ram"
+    //teamId: "ram"
   }
 ];
