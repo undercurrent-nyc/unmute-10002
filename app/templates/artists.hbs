@@ -1,6 +1,6 @@
 <Container>
   {{outlet}}
-  <Grid>
+  <Grid @artists={{true}}>
     {{#each @model as |artist|}}
       <ArtistTile @artist={{artist}} />
     {{/each}}
