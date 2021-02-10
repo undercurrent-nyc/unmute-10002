@@ -1,14 +1,7 @@
 <Container>
-  {{outlet}}
-  <ul>
+<Grid>
   {{#each @model as |team|}}
-  <li><LinkTo @route="teams.team" @model={{team}}>{{team.name}}</LinkTo>
-    <ul>
-      {{#each team.artists as |artist|}}
-        <li>{{artist.displayName}}</li>
-      {{/each}}
-    </ul>
-  </li>
+    <TeamTile @team={{team}} />
   {{/each}}
-  </ul>
+</Grid>
 </Container>
