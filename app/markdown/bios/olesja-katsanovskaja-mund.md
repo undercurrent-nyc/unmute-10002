@@ -1,0 +1,6 @@
+In her creative path, Olesja Katšanovskaja-Münd is constantly searching for intersections with interdisciplinary areas. Her education and work experience in fine art, museum pedagogy, and conservation have given her the opportunity to sense performance art as an artist, penetrate its deep layers as a conservator, and research in its functional component as an educator. 
+
+She attained a BA degree in Fine Art at the University of Tartu, an MA degree in Art Pedagogy at the Estonian Academy of Arts and studied in the art conservation department at the Academy of Arts in Saint Petersburg, Russia.
+
+Olesja’s performances and research projects were presented at the Tallinn Art Hall City Gallery Estonia, Shelter Art Laboratorium and International Festival in Helsinki; Garage Museum of Contemporary Art in Moscow; the Winzavod Centre for Contemporary Art in Moscow; Shiryaevo Biennale, Russia; the Ural Industrial Biennial Parallel Program and the Rosa Luxemburg House of Culture, St. Petersburg. She has also held many solo and group exhibitions, including at Brussels Art Fair in Belgium and Pärnu Contemporary Art Museum, Tartu Art House, and Tallinn galleries in Estonia. She won the Best Presentation Public Award at the TEDxTallinn 2013, Estonia. She lives and works in Tallinn. 
+
