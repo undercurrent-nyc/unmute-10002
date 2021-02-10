@@ -1,6 +1,38 @@
 <Container>
-{{outlet}}
-<Grid>
-in the grid.
-</Grid>
+  <LinkTo @route="teams" class="text-ungreen nav-teams block md:hidden text-sm font-semibold pb-2">/teams</LinkTo>
+  {{outlet}}
+  <aside class="text-un{{@model.team.color}}">
+    <Grid>
+      <div>
+        {{svg-jar (concat @model.team.id "-logo") class="fill-current"}}
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <h3 class="pb-1 md:pb-2 font-semibold uppercase text-xs md:text-2xl">{{@model.team.name}}</h3>
+
+        {{#each @model.team.artists as |artist|}}
+          <p class="pb-1 md:pb-0 underline font-semibold md:font-abnormal text-xs md:text-2xl">
+              {{artist.displayName}}
+          </p>
+          <p class="font-semibold md:font-normal text-2xs md:text-base md:pt-2">
+            {{artist.pronouns}}
+          </p>
+
+          <div class="flex flex-row space-x-5 pb-3">
+            <ArtistLinks @artist={{artist}} />
+
+            <div class="flex items-center justify-center">
+              <SwallowtailFlag @color={{@model.team.color}}>
+                {{artist.country}}
+              </SwallowtailFlag>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+      {{log @model}}
+      {{#each @model.clips as |clip|}}
+        <TeamClipTile @clip={{clip}} @team={{@model.team}}  /> 
+      {{/each}}
+
+    </Grid>
+  </aside>
 </Container>
