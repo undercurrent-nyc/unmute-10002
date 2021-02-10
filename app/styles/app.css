@@ -98,3 +98,7 @@ polygon.inverse {
   fill: #0963b5;
 }
 
+.active .name-tile {
+  visibility: visible;
+}
+
