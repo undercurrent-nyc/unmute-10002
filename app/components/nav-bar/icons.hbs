@@ -11,11 +11,11 @@
   <a href="#" role="button" {{on "click" this.toggleDropdown}}>
     {{svg-jar "bars" class="h-3 md:hidden" aria-hidden="true"}}
   </a>
-  <div class="{{if this.hiddenDropdown "hidden"}} nav-dropdown-menu absolute w-28 shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+  <div class="{{if this.hiddenDropdown "hidden"}} nav-dropdown-menu absolute w-28 shadow-lg z-50 bg-white ring-1 ring-black ring-opacity-5">
     <ul class="py-2" role="menu" aria-orientation="vertical" aria-labelledby="nav-dropdown-menu">
-      <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about" class="text-unPurple nav-about">/about</LinkTo></li>
-      <!-- <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about">/teams</LinkTo></li> -->
-      <!-- <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about">/artists</LinkTo></li> -->
+      <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about" class="text-unpurple nav-about">/about</LinkTo></li>
+      <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="teams" class="text-ungreen nav-teams">/teams</LinkTo></li>
+      <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="artists" class="text-unblue nav-artists">/artists</LinkTo></li>
       <!-- <li class="block px-4 py-1 text-xs" role="menuitem"><LinkTo @route="about">/podcast</LinkTo></li> -->
       <li class="block px-4 py-1 text-xs" role="menuitem"><a href="http://undercurrent.nyc/signup" class="text-unRed">/get updates</a></li>
       <li class="block px-4 py-1 text-xs" role="menuitem"><a href="http://10001.undercurrent.nyc" class="text-unPurple">/10001</a></li>
