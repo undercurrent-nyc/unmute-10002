@@ -1,3 +1,8 @@
 <Container>
   {{outlet}}
+  <Grid>
+    {{#each @model as |artist|}}
+      <ArtistTile @artist={{artist}} />
+    {{/each}}
+  </Grid>
 </Container>

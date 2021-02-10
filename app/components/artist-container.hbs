@@ -1,0 +1,59 @@
+<article class="grid grid-cols-4
+  gap-3 md:gap-6
+  text-un{{@artist.team.color}}
+  pb-10">
+  <aside>
+    <LinkTo @route="team.team" @model={{@artist.team.id}}>
+      {{svg-jar (concat @artist.team.id "-logo") class="fill-current"}}
+      <h3 class="pt-4 pb-1 md:pb-4
+                 text-base md:text-3xl uppercase font-semibold tracking-wide">
+        {{@artist.team.name}}
+      </h3>
+    </LinkTo>
+
+      <p class="font-normal text-xs md:text-xl">teammate</p>
+      <p class="font-normal text-xs md:text-xl">
+        <LinkTo @route="artists.artist" 
+          @model={{this.teammate.id}}
+          class="underline">
+          {{this.teammate.displayName}}
+        </LinkTo>
+      </p>
+      <p class="font-normal text-2xs md:text-base">
+        {{this.teammate.pronouns}}
+      </p>
+
+      <ArtistLinks @artist={{this.teammate}} />
+
+      <SwallowtailFlag @color={{@artist.team.color}}>
+        {{this.teammate.country}}
+      </SwallowtailFlag>
+
+  </aside>
+  <div class="pl-20 pr-6 col-span-2">
+    <div class="flex flex-row justify-between items-center">
+      <h2 class="pb-1 md:pb-2
+                 underline text-base md:text-3xl font-normal tracking-wide">
+        {{@artist.displayName}}
+      </h2>
+      <SwallowtailFlag @color={{@artist.team.color}}>
+        {{@artist.country}}
+      </SwallowtailFlag>
+    </div>
+
+      <p class="pb-1 md:pb-2 font-normal text-2xs md:text-base">
+        {{@artist.pronouns}}
+      </p>
+      <ArtistLinks @artist={{@artist}} />
+      <TextBox @markdownPath={{concat "bios/" @artist.id}} />
+  </div>
+  <div>
+    <img src={{@artist.imgUrl}}
+         alt="{{@artist.displayName}} {{if @artist.photoCredit (concat "by " @artist.photoCredit)}}" />
+    {{#if @artist.photoCredit}}
+      <p class="text-2xs md:text-sm text-right">
+        {{@artist.photoCredit}}
+      </p>
+    {{/if}}
+  </div>
+</article>

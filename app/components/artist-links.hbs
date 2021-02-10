@@ -1,0 +1,21 @@
+<div class="flex flex-row space-x-2 md:space-x-4 relative pt-4 pb-4">
+  {{#if @artist.url}}
+    <a role="button" href={{@artist.url}}>
+      {{svg-jar "globe" class="fill-current h-3 md:h-7"}}
+    </a>
+  {{/if}}
+  {{#if @artist.instagram}}
+  <a role="button" href="http://instagram.com/{{@artist.instagram}}">
+    {{svg-jar "instagram" class="fill-current h-3 md:h-7"}}
+  </a>
+  {{/if}}
+  {{#if @artist.facebook}}
+  <a role="button" href={{@artist.facebook}}>
+    {{svg-jar "facebook-official" class="fill-current h-3 md:h-7"}}
+  </a>
+  {{/if}}
+</div>
+  
+
+
+

@@ -4,132 +4,133 @@ export default [
     id: "aaron-bezzina",
     pronouns: "he/him/his",
     imgUrl: "https://i.imgur.com/0Ed2vr6.jpg",
+    photoCredit: "Aaron Bezzina",
     url: "https://www.aaronbezzina.com",
-    instagram: "@aaron.bezzina",
-    other: "",
+    instagram: "aaron.bezzina",
     country: "Malta",
     generation: "native",
-    //teamId: "mouse"
+    teamId: "mouse"
   },
   {
     displayName: "Alex Mirutziu",
     id: "alex-mirutziu",
     pronouns: "he/him/his",
     imgUrl: "https://i.imgur.com/EVjWCMA.jpg",
+    photoCredit: "Alex Mirutziu",
     url: "http://www.alexmirutziu.com",
-    instagram: "@alexmirutziu",
-    other: "https://www.facebook.com/oralityofdecor",
+    instagram: "alexmirutziu",
+    facebok: "https://www.facebook.com/oralityofdecor",
     country: "Romania",
     generation: "immigrant",
-    //teamId: "branch"
+    teamId: "branch"
   },
   {
     displayName: "Barbara Maria Neu",
     id: "barbara-maria-neu",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/aRmbHXT.jpg",
+    photoCredit: "Igor Ripak",
     url: "http://barbaramarianeu.at",
-    instagram: "@barbaramarianeu",
-    other: "",
+    instagram: "barbaramarianeu",
     country: "Austria",
     generation: "native",
-    //teamId: "profile"
+    teamId: "profile"
   },
   {
     displayName: "Emily Shanahan",
     id: "emily-shanahan",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/gZjlvXf.jpg",
+    photoCredit: "Gustavo Murillo Fernández-Valdés",
     url: "http://www.emilyshanahan.com",
-    instagram: "@_emilyshanahan_",
-    other: "",
+    instagram: "_emilyshanahan_",
     country: "NYC",
     generation: "immigrant",
-    //teamId: "stream"
+    teamId: "stream"
   },
   {
     displayName: "Emmanuel Massillon",
     id: "emmanuel-massillon",
     pronouns: "he/him/his",
     imgUrl: "https://i.imgur.com/y0ZUa6V.jpg",
+    photoCredit: "Emmanuel Massillon",
     url: "https://www.emmanuel-massillon.com",
-    instagram: "@massi____",
-    other: "",
+    instagram: "massi____",
     country: "NYC",
     generation: "native",
-    //teamId: "cloud"
+    teamId: "cloud"
   },
   {
     displayName: "Eren Aksu",
     id: "eren-aksu",
     pronouns: "he/him/his",
     imgUrl: "https://i.imgur.com/srRS0C2.jpg",
+    photoCredit: "Eren Aksu",
     url: "http://eren-aksu.com",
-    instagram: "",
-    other: "",
     country: "Germany",
     generation: "native",
-    //teamId: "thumbnail"
+    teamId: "thumbnail"
   },
   {
     displayName: "H. Lan Thao Lam",
     id: "h-lan-thao-lam",
     pronouns: "they/their",
     imgUrl: "https://i.imgur.com/rq8RLfW.jpg",
+    photoCredit: "H. Lan Thao Lam",
     url: "http://www.hlanthaolam.com/",
-    instagram: "",
-    other: "https://www.facebook.com/h.lanthao.lam/",
+    facebook: "https://www.facebook.com/h.lanthao.lam/",
     country: "NYC",
     generation: "immigrant",
-    //teamId: "bug"
+    teamId: "bug"
   },
   {
     displayName: "Gabrielė Gervickaitė",
     id: "gabriele-gervickaite",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/qvAZiIK.jpg",
+    photoCredit: "Gabrielė Gervickaitė",
     url: "http://www.gabrielegervickaite.com",
-    instagram: "@gabecosmo",
-    other: "https://www.facebook.com/GabieleGervickaite",
+    instagram: "gabecosmo",
+    facebook: "https://www.facebook.com/GabieleGervickaite",
     country: "Lithuania",
     generation: "immigrant",
-    //teamId: "ram"
+    teamId: "ram"
   },
   {
     displayName: "FOQL",
     id: "foql",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/FwX1Bek.jpg",
+    photoCredit: "Filip Preis",
     url: "https://soundsfoolish.com/",
-    instagram: "@f_____o__q_____l___",
-    other: "",
+    instagram: "f_____o__q_____l___",
     country: "Poland",
     generation: "immigrant",
-    //teamId: "cloud"
+    teamId: "cloud"
   },
   {
     displayName: "Kris Grey",
     id: "kris-grey",
     pronouns: "pronoun flexible: he/him/she/her/they/them",
     imgUrl: "https://i.imgur.com/AeLFX5x.jpg",
+    photoCredit: "Argenis Apolinario",
     url: "https://kristingrey.com",
-    instagram: "@krisgreystudio",
-    other: "",
+    instagram: "krisgreystudio",
     country: "NYC",
     generation: "immigrant",
-    //teamId: "profile"
+    teamId: "profile"
   },
   {
     displayName: "Kyle Hittmeier",
     id: "kyle-hittmeier",
     pronouns: "he/him/his",
     imgUrl: "https://i.imgur.com/JE0YdBY.jpg",
+    photoCredit: "Kyle Hittmeier",
     url: "http://www.kylehittmeier.com",
-    instagram: "@kyle.hittmeier",
-    other: "",
+    instagram: "kyle.hittmeier",
     country: "NYC",
     generation: "immigrant",
-    //teamId: "mouse"
+    teamId: "mouse"
   },
   {
     displayName: "Marie Lukáčová",
@@ -137,83 +138,82 @@ export default [
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/efp1EvD.jpg",
     url: "https://www.marielukacova.com",
-    instagram: "@marie__luka",
-    other: "",
+    instagram: "marie__luka",
     country: "Czech Republic",
     generation: "native",
-    //teamId: "stream"
+    teamId: "stream"
   },
   {
     displayName: "Mo Kong",
     id: "mo-kong",
     pronouns: "they/them/their",
     imgUrl: "https://i.imgur.com/PdKMiUt.jpg",
+    photoCredit: "Mo Kong",
     url: "https://mokongmo.com",
-    instagram: "@mosmosk",
-    other: "",
+    instagram: "mosmosk",
     country: "NYC",
     generation: "native",
-    //teamId: "web"
+    teamId: "web"
   },
   {
     displayName: "Olesja Katšanovskaja-Münd",
     id: "olesja-katsanovskaja-mund",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/SvArGKC.jpg",
+    photoCredit: "Olesja Katšanovskaja-Münd",
     url: "http://solaye.com/",
-    instagram: "",
-    other: "https://www.facebook.com/solaye.nova",
+    facebook: "https://www.facebook.com/solaye.nova",
     country: "Estonia",
     generation: "immigrant",
-    //teamId: "web"
+    teamId: "web"
   },
   {
-    displayName: "Sanne de Wilde",
+    displayName: "Sanne De Wilde",
     id: "sanne-de-wilde",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/GZTDNWx.jpg",
+    photoCredit: "Sanne De Wilde",
     url: "http://sannedewilde.com/",
-    instagram: "@sanne_de_wilde",
-    other: "",
+    instagram: "sanne_de_wilde",
     country: "Flanders, Belgium",
     generation: "native",
-    //teamId: "bug"
+    teamId: "bug"
   },
   {
     displayName: "Sheila Maldonado",
     id: "sheila-maldonado",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/BwUBnRY.jpg",
+    photoCredit: "Sheila Maldonado",
     url: "http://sheilamaldonado.com",
-    instagram: "@shelamal",
-    other: "",
+    instagram: "shelamal",
     country: "NYC",
     generation: "immigrant",
-    //teamId: "thumbnail"
+    teamId: "thumbnail"
   },
   {
     displayName: "Sophie Guisset",
     id: "sophie-guisset",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/VHBE2uV.jpg",
-    url: "http://www.facebook.com/sophie.guisset.50",
-    instagram: "@guissetsophie",
-    other: "",
+    photoCredit: "Sophie Guisset",
+    facebook: "http://www.facebook.com/sophie.guisset.50",
+    instagram: "guissetsophie",
     country: "Wallonia-Brussels, Belgium",
     generation: "native",
-    //teamId: "key"
+    teamId: "key"
   },
   {
     displayName: "Sydney Shavers",
     id: "sydney-shavers",
     pronouns: "she/her/hers",
-    imgUrl: "",
+    imgUrl: "https://i.imgur.com/QZ4C8mV.jpg",
+    photoCredit: "Sydney Shavers",
     url: "https://www.sydneyshavers.net/",
-    instagram: "@sydney_shavers",
-    other: "",
+    instagram: "sydney_shavers",
     country: "NYC",
     generation: "native",
-    //teamId: "branch"
+    teamId: "branch"
   },
   {
     displayName: "Will Calhoun",
@@ -221,22 +221,21 @@ export default [
     pronouns: "he/him/his",
     imgUrl: "https://i.imgur.com/QLFuJgR.jpg",
     url: "https://willcalhoun.com",
-    instagram: "@willcalhoundrum",
-    other: "",
+    instagram: "willcalhoundrum",
     country: "NYC",
     generation: "immigrant",
-    //teamId: "key"
+    teamId: "key"
   },
   {
     displayName: "Yi Hsuan Lai",
     id: "yi-hsuan-lai",
     pronouns: "she/her/hers",
     imgUrl: "https://i.imgur.com/T3ZUeX8.jpg",
+    photoCredit: "Yi Hsuan Lai",
     url: "https://www.flaneurshan.com/",
-    instagram: "@flaneur_shan",
-    other: "",
+    instagram: "flaneur_shan",
     country: "NYC",
     generation: "native",
-    //teamId: "ram"
+    teamId: "ram"
   }
 ];

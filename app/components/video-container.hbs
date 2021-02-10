@@ -28,9 +28,11 @@
             {{/each}}
           </div>
           {{#each @clip.team.artists as |artist|}}
-            <SwallowtailFlag @color={{color}}>
-              {{artist.country}}
-            </SwallowtailFlag>
+            <div class="pb-2 md:pb-3">
+              <SwallowtailFlag @color={{color}}>
+                {{artist.country}}
+              </SwallowtailFlag>
+            </div>
           {{/each}}
         {{/if}}
       </div>
