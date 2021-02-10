@@ -54,6 +54,8 @@ module.exports = function (environment) {
   if (environment === "production") {
     // here you can enable a production-specific feature
     ENV["ember-cli-mirage"].enabled = true;
+    ENV.YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
+    ENV.AIRTABLE_API_KEY = process.env.AIRTABLE_API_KEY;
   }
 
   return ENV;
