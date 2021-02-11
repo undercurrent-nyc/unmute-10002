@@ -1,10 +1,13 @@
-<LinkTo class="flex flex-col w-full clip-tile" @route="team.team.clip" @model={{@clip}}>
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210.8 210.8"xml:space="preserve">
-    <rect class="{{@team.color}}" width="210.8" height="210.8"/>
-  <polygon class="inverse" points="123.5,105.4 105.4,95 87.3,84.5 87.3,105.4 87.3,126.3 105.4,115.8 "/>
+<LinkTo class="team-clip-tile hover:text-alt{{@team.color}} flex flex-col w-full" @route="team.team.clip" @model={{@clip}}
+ {{on "mouseover" this.invert}}
+ {{on "mouseout" this.deinvert}}
+>
+  <svg class="pointer-events-none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210.8 210.8"xml:space="preserve">
+    <rect class="invertable {{@team.color}} inverse" width="210.8" height="210.8"/>
+    <polygon class="invertable inverse {{@team.color}}" points="123.5,105.4 105.4,95 87.3,84.5 87.3,105.4 87.3,126.3 105.4,115.8 "/>
   </svg>
   <p class="flex flex-row justify-between font-semibold pt-2 
-    text-xs md:text-xl">
+               text-xs md:text-xl tile-text text-un{{@team.color}}">
       Week /17
     </p>
 </LinkTo>

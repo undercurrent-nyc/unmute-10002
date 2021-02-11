@@ -67,23 +67,79 @@ body {
 }
 
 
-.clip-tile.active rect.red.inverse, .clip-tile.active polygon.green, rect.red, rect.green.inverse, polygon.green {
+.clip-tile.active rect.red.inverse, 
+.clip-tile.active polygon.green, 
+.clip-tile rect.red, 
+.clip-tile rect.green.inverse, 
+.clip-tile polygon.green,
+.team-clip-tile rect.red.inverse,
+.team-clip-tile rect.green.inverse,
+.team-clip-tile polygon.red,
+.team-clip-tile.active polygon.red,
+.team-clip-tile.active rect.green {
   fill: #ff3000;
 }
-.clip-tile.active rect.green.inverse, .clip-tile.active polygon.red, rect.green, rect.red.inverse, polygon.red {
+
+.clip-tile.active rect.green.inverse, 
+.clip-tile.active polygon.red, 
+.clip-tile rect.green, 
+.clip-tile rect.red.inverse, 
+.clip-tile polygon.red,
+.team-clip-tile polygon.green,
+.team-clip-tile rect.green.inverse,
+.team-clip-tile rect.red,
+.team-clip-tile.active polygon.green,
+.team-clip-tile.active rect.red {
   fill: #048e35;
 }
-.clip-tile.active rect.brown.inverse, .clip-tile.active polygon.blue, .clip-tile.active polygon.purple, rect.brown, rect.blue.inverse, rect.purple.inverse, polygon.purple, polygon.blue {
+
+.clip-tile.active rect.brown.inverse, 
+.clip-tile.active polygon.blue, 
+.clip-tile.active polygon.purple, 
+.clip-tile rect.brown, 
+.clip-tile rect.blue.inverse, 
+.clip-tile rect.purple.inverse, 
+.clip-tile polygon.purple, 
+.clip-tile polygon.blue,
+.team-clip-tile polygon.brown,
+.team-clip-tile.active rect.blue.inverse,
+.team-clip-tile.active polygon.brown,
+.team-clip-tile rect.brown.inverse,
+.team-clip-tile rect.blue {
   fill: #9b591e;
 }
-.clip-tile.active rect.blue.inverse, .clip-tile.active polygon.brown, rect.blue, rect.brown.inverse, polygon.brown {
+.clip-tile.active rect.blue.inverse, 
+.clip-tile.active polygon.brown, 
+.clip-tile rect.blue, 
+.clip-tile rect.brown.inverse, 
+.clip-tile polygon.brown,
+.team-clip-tile polygon.blue,
+.team-clip-tile.active rect.brown,
+.team-clip-tile.active polygon.blue,
+.team-clip-tile rect.blue.inverse,
+.team-clip-tile rect.brown {
   fill: #0963b5;
 }
-.clip-tile.active rect.purple.inverse, rect.purple {
+
+.clip-tile.active rect.purple.inverse, 
+.clip-tile rect.purple {
   fill: #6043ba;
 }
 
-polygon.inverse {
+.active .tile-text.text-unblue, .active .tile-text.text-unpurple {
+  color: #9b591e;
+}
+.active .tile-text.text-unbrown {
+  color: #0963b5;
+}
+.active .tile-text.text-unred {
+  color: #048e35;
+}
+.active .tile-text.text-ungreen {
+  color: #ff3000;
+}
+
+.clip-tile polygon.inverse, .team-clip-tile polygon.inverse {
   fill: white;
 }
 
@@ -94,10 +150,6 @@ polygon.inverse {
   overflow: hidden;
 }
 
-.clip-tile.active polygon.inverse.brown {
-  fill: #0963b5;
-}
-
 .active .name-tile {
   visibility: visible;
 }
@@ -105,3 +157,5 @@ polygon.inverse {
 .swallowtail {
   min-width: 1rem;
 }
+
+
