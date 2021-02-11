@@ -2,7 +2,7 @@
   <LinkTo @route="artists" class="text-right nav-artists block md:hidden text-sm font-semibold pb-4">/artists</LinkTo>
   {{outlet}}
   <Grid @artists={{true}}>
-    {{#each @model as |artist|}}
+    {{#each (shuffle @model) as |artist|}}
       <ArtistTile @artist={{artist}} />
     {{/each}}
   </Grid>

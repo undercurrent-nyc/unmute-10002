@@ -2,37 +2,43 @@
   <LinkTo @route="teams" class="text-ungreen nav-teams block md:hidden text-sm font-semibold pb-4 text-right">/teams</LinkTo>
   {{outlet}}
   <aside class="text-un{{@model.team.color}}">
-    <Grid>
-      <div>
+    <div class="w-full flex flex-row space-x-4 pb-4">
+      <div class="w-1/3 md:w-1/4">
         {{svg-jar (concat @model.team.id "-logo") class="fill-current"}}
       </div>
-      <div class="col-span-2 md:col-span-1">
-        <h3 class="pb-1 md:pb-2 font-semibold uppercase text-xs md:text-2xl">{{@model.team.name}}</h3>
-
-        {{#each @model.team.artists as |artist|}}
-          <p class="pb-1 md:pb-0 underline font-semibold md:font-abnormal text-xs md:text-2xl">
-              {{artist.displayName}}
-          </p>
-          <p class="font-semibold md:font-normal text-2xs md:text-base md:pt-2">
-            {{artist.pronouns}}
-          </p>
-
-          <div class="flex flex-row space-x-5 pb-3">
-            <ArtistLinks @artist={{artist}} />
-
-            <div class="flex items-center justify-center">
-              <SwallowtailFlag @color={{@model.team.color}}>
-                {{artist.country}}
-              </SwallowtailFlag>
-            </div>
+      <div class="w-2/3 md:w-3/4 flex flex-col">
+          <div class="w-full">
+            <h3 class="pb-1 md:pb-2 font-semibold uppercase text-xs md:text-2xl">{{@model.team.name}}</h3>
           </div>
-        {{/each}}
+          <div class="flex flex-col md:flex-row md:space-x-3 space-y-2 md:space-y-0">
+            {{#each (shuffle @model.team.artists) as |artist|}}
+              <div class="w-full md:w-1/2 space-y-1 md:space-y-2 flex flex-col">
+                <div class="flex flex-row md:flex-col items-end md:items-start justify-between">
+                  <p class="underline md:font-abnormal font-semibold text-xs md:text-2xl">
+                    <LinkTo @route="artists.artist" @model={{artist}} class="hover:text-alt{{@model.team.color}}">
+                      {{artist.displayName}}
+                    </LinkTo>
+                  </p>
+                  <p class="font-semibold md:font-normal text-2xs md:text-base md:pt-2">
+                    {{artist.pronouns}}
+                  </p>
+                </div>
+                <div class="flex flex-row md:flex-col items-center md:items-start justify-between">
+                  <ArtistLinks @artist={{artist}} />
+                  <SwallowtailFlag @color={{@model.team.color}}>
+                    {{artist.country}}
+                  </SwallowtailFlag>
+                </div>
+              </div>
+            {{/each}}
+          </div>
+        </div>
       </div>
-      {{log @model}}
+    <Grid>
       {{#each @model.clips as |clip|}}
+        {{log clip}}
         <TeamClipTile @clip={{clip}} @team={{@model.team}}  /> 
       {{/each}}
-
     </Grid>
   </aside>
 </Container>
