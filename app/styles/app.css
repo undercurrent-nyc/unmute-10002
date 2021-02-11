@@ -102,3 +102,6 @@ polygon.inverse {
   visibility: visible;
 }
 
+.swallowtail {
+  min-width: 1rem;
+}
