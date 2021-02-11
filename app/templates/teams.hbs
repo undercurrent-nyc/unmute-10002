@@ -1,5 +1,5 @@
 <Container>
-  <LinkTo @route="teams" class="nav-teams block md:hidden text-sm font-semibold pb-2">/teams</LinkTo>
+  <LinkTo @route="teams" class="text-right nav-teams block md:hidden text-sm font-semibold pb-4">/teams</LinkTo>
   <Grid>
     {{#each @model as |team|}}
       <TeamTile @team={{team}} />

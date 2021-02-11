@@ -91,3 +91,14 @@ International in New York](http://wallonia.us/en),
 the [Jindřich Chalupecký Society](http://www.sjch.cz/en/”), and supported by the European Union
 Delegation to the United Nations.
 
+---
+
+**Undercurrent un/mute team:**
+
+* Executive Production and Concept: Daina Mattis
+* Design, Media, and Concept: Laura Zaveckaitė
+* Art Direction: D. Mattis & L. Zaveckaitė
+* Editing: Adriana Furlong, D. Mattis, Jared Washburn
+* Web Development: Moacir P. de Sá Pereira
+
+

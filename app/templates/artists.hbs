@@ -1,5 +1,5 @@
 <Container>
-  <LinkTo @route="artists" class="nav-artists block md:hidden text-sm font-semibold pb-2">/artists</LinkTo>
+  <LinkTo @route="artists" class="text-right nav-artists block md:hidden text-sm font-semibold pb-4">/artists</LinkTo>
   {{outlet}}
   <Grid @artists={{true}}>
     {{#each @model as |artist|}}

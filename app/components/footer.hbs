@@ -1,4 +1,4 @@
-<footer class="relative bg-white"> 
+<footer class="pt-4 relative bg-white"> 
   <div class="py-2 md:py-6
     grid auto-rows-fr
     grid-cols-2 md:grid-cols-4 
@@ -18,7 +18,23 @@
             (if
               (eq logo.name "eunic-eu")
               "w-full"
-              "w-full md:w-4/5"
+              (if
+                (eq logo.name "malta")
+                "w-1/2" 
+                (if 
+                  (or
+                    (eq logo.name "estonia")
+                    (eq logo.name "czech")
+                    (eq logo.name "hope")
+                    )
+                    "w-3/4"
+                    (if 
+                      (eq logo.name "estonia-consulate")
+                      "w-4/5"
+                      "w-3/5" 
+                    )
+                  )
+                )
               )
             )}}
       </a>
