@@ -1,0 +1,32 @@
+<header class="pb-3 md:-b-0 w-full flex flex-col md:flex-row-reverse">
+  <div class="w-full md:w-1/4">
+    <img src={{@artist.imgUrl}}
+         alt="{{@artist.displayName}} {{if @artist.photoCredit (concat "by " @artist.photoCredit)}}" />
+    {{#if @artist.photoCredit}}
+      <p class="text-2xs font-normal  md:text-sm text-right">
+        {{@artist.photoCredit}}
+      </p>
+    {{/if}}
+  </div>
+  <div class="flex flex-row w-full md:w-3/4">
+      <LinkTo @route="team.team" @model={{@artist.team.id}}
+        class="w-1/3">
+        {{svg-jar (concat @artist.team.id "-logo") class="w-full fill-current"}}
+      </LinkTo>
+
+      <div class="md:pl-20 pl-3 flex flex-col space-y-3">
+        <h2 class="text-alt{{@artist.team.color}}
+                 underline text-base md:text-3xl font-normal tracking-wide">
+          {{@artist.displayName}}
+        </h2>
+        <p class="font-normal text-2xs md:text-base">
+          {{@artist.pronouns}}
+        </p>
+        <ArtistLinks @artist={{@artist}} />
+        <SwallowtailFlag @color={{@artist.team.color}}>
+          {{@artist.country}}
+        </SwallowtailFlag>
+      </div>
+  </div>
+</header>
+

@@ -21,6 +21,11 @@ module.exports = {
       unpurple: "#6043ba",
       unblue: "#0963b5",
       unred: "#ff3000",
+      altred: "#048e35",
+      altblue: "#9b591e",
+      altpurple: "#9b591e",
+      altbrown: "#0963b5",
+      altgreen: "#ff3000",
       
 
       black: colors.black,

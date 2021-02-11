@@ -1,10 +1,10 @@
 <div class="flex flex-row">
-  <div class="bg-un{{@color}} text-white h-3 md:h-6 flex items-center justify-center">
+  <div class="bg-un{{@color}} text-white flex items-center justify-center">
     <p class="px-2 uppercase font-semibold text-xs md:text-xl md:font-normal md:tracking-wide">
       {{yield}}
     </p>
   </div>
-  <div class="h-3 md:h-6 w-3 md:w-6 -ml-1">
+  <div class="h-full flex-grow-0 pr-2">
     {{svg-jar "swallowtail" class="fill-current h-full"}}
   </div>
 </div>
