@@ -94,7 +94,7 @@ Delegation to the United Nations.
 * Executive Production and Concept: [Daina Mattis](http://dainamattis.com)
 * Design, Media, and Concept: [Laura Zaveckaitė](http://instagram.com/laura.zaveckaite)
 * Art Direction: D. Mattis & L. Zaveckaitė
-* Editing: [Adriana Furlong](http://adrianafurlong.com), D. Mattis, Jared Washburn
+* Editing: [Adriana Furlong](http://adrianafurlong.com) and D. Mattis
 * Web Development: [Moacir P. de Sá Pereira](http://undercurrent.nyc/team/moacir-p-de-sa-pereira)
 
 
