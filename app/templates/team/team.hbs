@@ -3,7 +3,7 @@
   {{outlet}}
   <aside class="text-un{{@model.team.color}}">
     <div class="w-full flex flex-row space-x-4 pb-4">
-      <div class="w-1/3 md:w-1/4">
+      <div class="w-1/3 md:w-1/4 md:pr-3">
         {{svg-jar (concat @model.team.id "-logo") class="fill-current"}}
       </div>
       <div class="w-2/3 md:w-3/4 flex flex-col">
@@ -36,9 +36,9 @@
       </div>
     <Grid>
       {{#each @model.clips as |clip|}}
-        {{log clip}}
         <TeamClipTile @clip={{clip}} @team={{@model.team}}  /> 
       {{/each}}
     </Grid>
   </aside>
+  <BottomBorder @color={{@model.team.color}} />
 </Container>

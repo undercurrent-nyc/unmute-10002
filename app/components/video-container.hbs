@@ -21,22 +21,24 @@
         <h2 class="pb-1 md:pb-4
           text-base md:text-3xl uppercase font-semibold tracking-wide">{{if @clip.team @clip.team.name "lottery"}}</h2>
 
-        {{#if @clip.team}}
-          <div class="pb-4">
-            {{#each @clip.team.artists as |artist|}}
-              <div class="flex flex-row md:flex-col justify-between pb-2 md:pb-3">
-                <h3 class="font-semibold md:font-normal text-xs md:text-xl">
-                  <LinkTo @route="artists.artist" @model={{artist}} class="underline hover:text-alt{{@clip.team.color}}">
-                    {{artist.displayName}}
-                  </LinkTo>
-                </h3>
-                <SwallowtailFlag @color={{color}}>
-                  {{artist.country}}
-                </SwallowtailFlag>
-              </div>
-            {{/each}}
-          </div>
-        {{/if}}
+        {{#unless @noName}}
+          {{#if @clip.team}}
+            <div class="pb-4">
+              {{#each @clip.team.artists as |artist|}}
+                <div class="flex flex-row md:flex-col justify-between pb-2 md:pb-3">
+                  <h3 class="font-semibold md:font-normal text-xs md:text-xl">
+                    <LinkTo @route="artists.artist" @model={{artist}} class="underline hover:text-alt{{@clip.team.color}}">
+                      {{artist.displayName}}
+                    </LinkTo>
+                  </h3>
+                  <SwallowtailFlag @color={{color}}>
+                    {{artist.country}}
+                  </SwallowtailFlag>
+                </div>
+              {{/each}}
+            </div>
+          {{/if}}
+        {{/unless}}
       </div>
       <div class="w-full md:pt-6">
         <p class="font-normal md:font-abnormal text-sm md:text-base text-justify">
