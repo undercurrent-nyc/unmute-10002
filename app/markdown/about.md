@@ -1,7 +1,3 @@
-## un/mute
-
-/February 12 – May 9, 2021
-
 /Join us, February 12, 1pm EST to launch our project UN/MUTE-10002 
 on [Facebook](http://facebook.com/undercurrent.nyc) and follow the project
 here at http://unmute.nyc.
@@ -95,10 +91,10 @@ Delegation to the United Nations.
 
 **Undercurrent un/mute team:**
 
-* Executive Production and Concept: Daina Mattis
+* Executive Production and Concept: [Daina Mattis](http://dainamattis.com)
 * Design, Media, and Concept: Laura Zaveckaitė
 * Art Direction: D. Mattis & L. Zaveckaitė
-* Editing: Adriana Furlong, D. Mattis, Jared Washburn
-* Web Development: Moacir P. de Sá Pereira
+* Editing: [Adriana Furlong](http://adrianafurlong.com), D. Mattis, Jared Washburn
+* Web Development: [Moacir P. de Sá Pereira](http://undercurrent.nyc/team/moacir-p-de-sa-pereira)
 
 

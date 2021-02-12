@@ -20,11 +20,20 @@ body {
 }
 
 .text-box p {
-  @apply pb-10;
+  @apply pb-6 md:pb-8;
 }
+
+.text-box a {
+  @apply underline
+}
+
 
 .unmute-logo {
   width: 28%;
+}
+
+.nav-clips.active {
+  @apply text-unred underline;
 }
 
 .nav-about.active {
@@ -77,6 +86,7 @@ body {
 .team-clip-tile polygon.red,
 .team-clip-tile.active polygon.red,
 .team-clip-tile.active rect.green.inverse,
+.text-box.text-ungreen a:hover,
 .active .tile-text.text-ungreen {
   color: #ff3000;
   fill: #ff3000;
@@ -92,6 +102,7 @@ body {
 .team-clip-tile rect.red,
 .team-clip-tile.active polygon.green,
 .team-clip-tile.active rect.red.inverse,
+.text-box.text-unred a:hover,
 .active .tile-text.text-unred {
   color: #048e35;
   fill: #048e35;
@@ -110,6 +121,8 @@ body {
 .team-clip-tile.active polygon.brown,
 .team-clip-tile rect.brown.inverse,
 .team-clip-tile rect.blue,
+.text-box.text-unpurple a:hover,
+.text-box.text-unblue a:hover,
 .active .tile-text.text-unblue, .active .tile-text.text-unpurple {
   color: #9b591e;
   fill: #9b591e;
@@ -124,6 +137,7 @@ body {
 .team-clip-tile.active polygon.blue,
 .team-clip-tile rect.blue.inverse,
 .team-clip-tile rect.brown,
+.text-box.text-unbrown a:hover,
 .active .tile-text.text-unbrown {
   color: #0963b5;
   fill: #0963b5;
