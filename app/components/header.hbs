@@ -3,7 +3,9 @@
   flex flex-row-reverse justify-between flex-row md:flex-col
   w-full">
   <div class="md:w-full flex flex-row justify-end items-end flex-grow-1 h-5 md:h-14">
-    {{svg-jar "unmute" class="h-full"}}
+    <LinkTo @route="clips">
+      {{svg-jar "unmute" class="h-full"}}
+    </LinkTo>
   </div>
   <NavBar />
 </header>
