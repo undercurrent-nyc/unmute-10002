@@ -11,15 +11,16 @@
   <a href="#" role="button" {{on "click" this.toggleDropdown}}>
     {{svg-jar "bars" class="h-4 md:hidden" aria-hidden="true"}}
   </a>
-  <div class="{{if this.hiddenDropdown "hidden"}} nav-dropdown-menu absolute w-36 shadow-lg z-50 bg-white ring-1 ring-black ring-opacity-5">
+  <div class="{{if this.hiddenDropdown "hidden"}} nav-dropdown-menu absolute w-36 shadow-lg z-50 bg-white ring-1 ring-black ring-opacity-5"
+       role="menu">
     <ul class="py-2 font-normal" role="menu" aria-orientation="vertical" aria-labelledby="nav-dropdown-menu">
-      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo @route="clips" class="text-unred nav-about">/clips</LinkTo></li>
-      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo @route="about" class="text-unpurple nav-about">/about</LinkTo></li>
-      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo @route="teams" class="text-ungreen nav-teams">/teams</LinkTo></li>
-      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo @route="artists" class="text-unblue nav-artists">/artists</LinkTo></li>
-      <!-- <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo @route="about">/podcast</LinkTo></li> -->
-      <li class="block px-4 py-1 text-base" role="menuitem"><a href="http://undercurrent.nyc/signup" class="text-unred">/get updates</a></li>
-      <li class="block px-4 py-1 text-base" role="menuitem"><a href="http://10001.undercurrent.nyc" class="text-black">/10001</a></li>
+      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo  {{on "click" this.toggleDropdown}} @route="clips" class="text-unred nav-about">/clips</LinkTo></li>
+      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo  {{on "click" this.toggleDropdown}} @route="about" class="text-unpurple nav-about">/about</LinkTo></li>
+      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo {{on "click" this.toggleDropdown}} @route="teams" class="text-ungreen nav-teams">/teams</LinkTo></li>
+      <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo  {{on "click" this.toggleDropdown}} @route="artists" class="text-unblue nav-artists">/artists</LinkTo></li>
+      <!-- <li class="block px-4 py-1 text-base" role="menuitem"><LinkTo {{on "click" this.toggleDropdown}} @route="about">/podcast</LinkTo></li> -->
+      <li class="block px-4 py-1 text-base"><a href="http://undercurrent.nyc/signup" class="text-unred">/get updates</a></li>
+      <li class="block px-4 py-1 text-base"><a href="http://10001.undercurrent.nyc" class="text-black">/10001</a></li>
     </ul>
   </div>
 </div>

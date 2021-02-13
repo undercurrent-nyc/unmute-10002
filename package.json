@@ -27,6 +27,7 @@
     "autoprefixer": "^10.2.3",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
+    "ember-animated": "^0.10.1",
     "ember-auto-import": "^1.8.0",
     "ember-cli": "~3.23.0",
     "ember-cli-app-version": "^4.0.0",
