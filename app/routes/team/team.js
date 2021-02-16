@@ -9,7 +9,8 @@ export default class TeamTeamRoute extends Route {
     const team = await this.store.findRecord("team", team_id, { include: "artists" });
     return RSVP.hash({
       team,
-      clips: clips.toArray().filter(e => e.team === team),
+      clips: clips.toArray().filter(e => e.team === team).sort((a, b) => (a.color > b.color) ? 1 : -1).reverse(),
+
     });
   }
 }
