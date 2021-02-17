@@ -18,7 +18,7 @@ export default class ClipSerializer extends RESTSerializer {
 
       payload.records.forEach(record => {
         const newRecord = {};
-        if(record.fields.youtubeUrl) {
+        if(record.fields.youtubeUrl && /youtu.be/.test(record.fields.youtubeUrl)) {
           newRecord.youtubeUrl = record.fields.youtubeUrl;
           newRecord.date = record.fields.date;
           newRecord.id = newRecord.youtubeUrl.replace("https://youtu.be/", "");
