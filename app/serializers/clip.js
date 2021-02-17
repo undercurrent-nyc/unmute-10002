@@ -7,7 +7,7 @@ export default class ClipSerializer extends RESTSerializer {
 
     // Anticipates the REST format.
     if(payload.records) {
-      payload[modelNamePlural] = [];
+      const clips = [];
 
       payload.meta = {
         offset: payload.offset
@@ -23,9 +23,13 @@ export default class ClipSerializer extends RESTSerializer {
           newRecord.date = record.fields.date;
           newRecord.id = newRecord.youtubeUrl.replace("https://youtu.be/", "");
           newRecord.team = record.fields.teamId
-          payload[modelNamePlural].push(newRecord);
+          clips.push(newRecord);
         }
       });
+      payload[modelNamePlural] = clips.sort((a, b) => {
+        return a.date < b.date ? -1 : a.date > b.date ? 1 : a.date >= b.date ? 0 : Na.dateN;
+      }).reverse();
+
       delete payload.records;
     // // } else {
     // //   payload[type.modelName] = payload.fields;
