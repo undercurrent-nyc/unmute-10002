@@ -7,22 +7,26 @@ export default class ClipSerializer extends RESTSerializer {
 
     // Anticipates the REST format.
     if(payload.records) {
-      payload[modelNamePlural] = payload.records;
-      delete payload.records;
+      payload[modelNamePlural] = [];
 
       payload.meta = {
         offset: payload.offset
       };
       delete payload.offset;
 
-      payload[modelNamePlural].forEach(record => {
-        record.youtubeUrl = record.fields.youtubeUrl;
-        record.date = record.fields.date;
-        record.id = record.youtubeUrl.replace("https://youtu.be/", "");
-        record.team = record.fields.teamId
-        delete record.createdTime;
-        delete record.fields;
+      console.log(payload.records);
+
+      payload.records.forEach(record => {
+        const newRecord = {};
+        if(record.fields.youtubeUrl) {
+          newRecord.youtubeUrl = record.fields.youtubeUrl;
+          newRecord.date = record.fields.date;
+          newRecord.id = newRecord.youtubeUrl.replace("https://youtu.be/", "");
+          newRecord.team = record.fields.teamId
+          payload[modelNamePlural].push(newRecord);
+        }
       });
+      delete payload.records;
     // // } else {
     // //   payload[type.modelName] = payload.fields;
     // //   payload[type.modelName].id = payload.id;
