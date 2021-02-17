@@ -96,7 +96,7 @@ Delegation to the United Nations.
 * Art Direction: D. Mattis & L. Zaveckaitė
 * Editing: [JJ Barrett](https://instagram.com/jjbarrett_), [Alex
   Emerson](http://awemerson.com), [Adriana
-  Furlong](http://adrianafurlong.com), [Patricia
+  Furlong](http://instagram.com/adriana.furlong), [Patricia
   Geyerhahn](http://patriciageyerhahn.com), and D. Mattis
 * Web Development: [Moacir P. de Sá Pereira](http://undercurrent.nyc/team/moacir-p-de-sa-pereira)
 
