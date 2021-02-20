@@ -14,8 +14,6 @@ export default class ClipSerializer extends RESTSerializer {
       };
       delete payload.offset;
 
-      console.log(payload.records);
-
       payload.records.forEach(record => {
         const newRecord = {};
         if(record.fields.youtubeUrl && /youtu.be/.test(record.fields.youtubeUrl)) {

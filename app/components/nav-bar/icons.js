@@ -7,7 +7,6 @@ export default class NavBarIconsComponent extends Component {
 
   @action
   toggleDropdown() {
-    console.log("toggling");
     this.hiddenDropdown = !this.hiddenDropdown;
   }
 

@@ -1,4 +1,4 @@
-<LinkTo class="team-clip-tile hover:text-alt{{@team.color}} flex flex-col w-full" @route="team.team.clip" @model={{@clip}}
+<LinkTo class="team-clip-tile hover:text-alt{{@team.color}} flex flex-col w-full" @route="team.team.clip" @models={{array @team @clip}} @clip={{@clip}}
  {{on "mouseover" this.invert}}
  {{on "mouseout" this.deinvert}}
 >
