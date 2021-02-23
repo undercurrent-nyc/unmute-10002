@@ -1,8 +1,3 @@
-/Join us, February 12, 1pm EST to launch our project UN/MUTE-10002 
-on [Facebook](http://facebook.com/undercurrent.nyc) and follow the project
-here at http://unmute.nyc.
-
-
 /Creating a fair and equitable space after COVID shuttered artists from
 residencies, travel, studio visits, exhibitions, and physical networking,
 UN/MUTE is an online residency that provides artists an opportunity for a
