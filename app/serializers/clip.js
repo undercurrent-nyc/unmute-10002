@@ -18,6 +18,7 @@ export default class ClipSerializer extends RESTSerializer {
         const newRecord = {};
         if(record.fields.youtubeUrl && /youtu.be/.test(record.fields.youtubeUrl)) {
           newRecord.youtubeUrl = record.fields.youtubeUrl;
+          newRecord.order = record.fields.revOrder;
           newRecord.date = record.fields.date;
           newRecord.id = newRecord.youtubeUrl.replace("https://youtu.be/", "");
           newRecord.team = record.fields.teamId
@@ -25,7 +26,7 @@ export default class ClipSerializer extends RESTSerializer {
         }
       });
       payload[modelNamePlural] = clips.sort((a, b) => {
-        return a.date < b.date ? -1 : a.date > b.date ? 1 : a.date >= b.date ? 0 : Na.dateN;
+        return a.order < b.order ? -1 : a.order > b.order ? 1 : a.order >= b.order ? 0 : NaN;
       }).reverse();
 
       delete payload.records;
