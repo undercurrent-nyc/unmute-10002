@@ -4,7 +4,7 @@ UN/MUTE is an online residency that provides artists an opportunity for a
 critical exchange and collaboration while simultaneously connecting resources
 from the global cultural epicenter of New York City. This project is
 co-organized by [Undercurrent](http://undercurrent.nyc) and the [European Union National Institutes for
-Culture’s New York Cluster](http://eunicglobal.eu). It will go live on February 12,
+Culture’s New York Cluster](http://eunicglobal.eu). It went live on February 12,
 2021, in concurrence with the Lunar New Year, and will continue through May
 9th, celebrating Europe Day. 
  
