@@ -1,5 +1,5 @@
 <header class="pb-3 md:-b-0 w-full flex flex-col md:flex-row-reverse">
-  <div class="w-full md:w-1/4">
+  <div class="w-full md:w-1/4 {{if @artist.photoCredit "pb-1" "pb-4"}}">
     <img src={{@artist.imgUrl}}
          alt="{{@artist.displayName}} {{if @artist.photoCredit (concat "by " @artist.photoCredit)}}" />
     {{#if @artist.photoCredit}}
