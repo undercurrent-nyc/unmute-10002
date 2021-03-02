@@ -8,7 +8,8 @@
       rules=this.rules
       as |photo| }}
       <div class="carousel-image">
-        <img alt="alt {{photo.credit}}" src={{photo.imgurUrl}} class="flex-shrink-0 min-w-full min-h-full">
+        <img alt="alt {{photo.credit}}" src={{photo.imgurUrl}} 
+        class="object-cover w-full h-full">
       </div>
   {{/animated-value}}
 
