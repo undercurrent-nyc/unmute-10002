@@ -75,6 +75,11 @@ body {
   @apply absolute top-0 left-0 bottom-0 right-0 z-0 h-full w-full;
 }
 
+.carousel-image {
+  z-index: -1;
+  @apply w-full h-full flex justify-center items-center overflow-hidden;
+}
+
 
 .clip-tile.active rect.red.inverse, 
 .clip-tile.active polygon.green, 

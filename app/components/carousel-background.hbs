@@ -7,7 +7,7 @@
       duration=this.transitionDuration
       rules=this.rules
       as |photo| }}
-      <div class="w-full h-full flex justify-center items-center overflow-hidden">
+      <div class="carousel-image">
         <img alt="alt {{photo.credit}}" src={{photo.imgurUrl}} class="flex-shrink-0 min-w-full min-h-full">
       </div>
   {{/animated-value}}
