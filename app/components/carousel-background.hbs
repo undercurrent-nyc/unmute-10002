@@ -1,0 +1,15 @@
+<AnimatedContainer class="absolute top-0 left-0 w-screen h-screen sticky"
+  {{did-insert this.startCarousel}}
+  >
+  <div class="video-image-overlay"></div>
+
+  {{#animated-value this.activePhoto
+      duration=this.transitionDuration
+      rules=this.rules
+      as |photo| }}
+      <div class="w-full h-full flex justify-center items-center overflow-hidden">
+        <img alt="alt {{photo.credit}}" src={{photo.imgurUrl}} class="flex-shrink-0 min-w-full min-h-full">
+      </div>
+  {{/animated-value}}
+
+</AnimatedContainer>
