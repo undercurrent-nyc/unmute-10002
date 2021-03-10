@@ -21,9 +21,11 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Alex Mirutziu",
       photos: [
         {
+          credit: "Alex Mirutziu",
           url: "https://i.imgur.com/UED7QKl.jpg"
         },
         {
+          credit: "Alex Mirutziu",
           url: "https://i.imgur.com/DZHjND3.jpg"
         },
       ]
@@ -71,6 +73,7 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Emily Shanahan",
       photos: [
         {
+          credit: "Emily Shanahan",
           url: "https://i.imgur.com/O1k2ZjU.jpg"
         },
         {
@@ -82,9 +85,11 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Eren Aksu",
       photos: [
         {
+          credit: "Eren Aksu",
           url: "https://i.imgur.com/7pMJGvf.jpg"
         },
         {
+          credit: "Eren Aksu",
           url: "https://i.imgur.com/6VqFNhL.jpg"
         },
       ]
@@ -104,12 +109,15 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Gabrielė Gervickaitė",
       photos: [
         {
+          credit: "Gabrielė Gervickaitė",
           url: "https://i.imgur.com/igeNpd9.jpg"
         },
         {
+          credit: "Gabrielė Gervickaitė",
           url: "https://i.imgur.com/CM4TKJV.jpg"
         },
         {
+          credit: "Gabrielė Gervickaitė",
           url: "https://i.imgur.com/Tzsklra.jpg"
         },
       ]
@@ -117,6 +125,7 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "H. Lan Thao Lam",
       photos: [
         {
+          credit: "H. Lan Thao Lam",
           url: "https://i.imgur.com/Ds2kyoR.jpg"
         },
         {
@@ -128,12 +137,15 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Kyle Hittmeier",
       photos: [
         {
+          credit: "Kyle Hittmeier",
           url: "https://i.imgur.com/RjvEHpS.jpg"
         },
         {
+          credit: "Kyle Hittmeier",
           url: "https://i.imgur.com/qYQmLOI.jpg"
         },
         {
+          credit: "Kyle Hittmeier",
           url: "https://i.imgur.com/LvD2ACO.jpg"
         },
       ]
@@ -157,12 +169,15 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Marie Lukáčová",
       photos: [
         {
+          credit: "Marie Lukáčová",
           url: "https://i.imgur.com/J2UoOUg.jpg"
         },
         {
+          credit: "Marie Lukáčová",
           url: "https://i.imgur.com/I6YsklN.jpg"
         },
         {
+          credit: "Marie Lukáčová",
           url: "https://i.imgur.com/Mln4MpK.jpg"
         },
       ]
@@ -170,12 +185,15 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Mo Kong",
       photos: [
         {
+          credit: "Mo Kong",
           url: "https://i.imgur.com/2ZVYhnj.jpg"
         },
         {
+          credit: "Mo Kong",
           url: "https://i.imgur.com/z1S5tLi.jpg"
         },
         {
+          credit: "Mo Kong",
           url: "https://i.imgur.com/UqVhPeA.jpg"
         },
       ]
@@ -191,6 +209,7 @@ export default class CarouselBackgroundComponent extends Component {
           credit: "Roman Münd"
         },
         {
+          credit: "Olesja Katšanovskaja-Münd",
           url: "https://i.imgur.com/VOGQgPF.jpg"
         },
       ]
@@ -198,12 +217,15 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Sanne De Wilde",
       photos: [
         {
+          credit: "Sanne De Wilde",
           url: "https://i.imgur.com/wYNAQqZ.jpg"
         },
         {
+          credit: "Sanne De Wilde",
           url: "https://i.imgur.com/tXJUrmS.jpg"
         },
         {
+          credit: "Sanne De Wilde",
           url: "https://i.imgur.com/aASe0CN.jpg"
         },
       ]
@@ -211,9 +233,11 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Sheila Maldonado",
       photos: [
         {
+          credit: "Sheila Maldonado",
           url: "https://i.imgur.com/8GoEEuj.jpg"
         },
         {
+          credit: "Sheila Maldonado",
           url: "https://i.imgur.com/WTfu5z0.jpg"
         },
         {
@@ -225,6 +249,7 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Sophie Guisset",
       photos: [
         {
+          credit: "Sophie Guisset",
           url: "https://i.imgur.com/cxfFnp4.jpg"
         },
         {
@@ -244,9 +269,11 @@ export default class CarouselBackgroundComponent extends Component {
           credit: "Lyric Wills",
         },
         {
+          credit: "Sydney Shavers",
           url: "https://i.imgur.com/JbgDC4i.jpg"
         },
         {
+          credit: "Sydney Shavers",
           url: "https://i.imgur.com/Smuchx2.jpg"
         },
       ]
@@ -254,12 +281,15 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Will Calhoun",
       photos: [
         {
+          credit: "Will Calhoun",
           url: "https://i.imgur.com/FispKT1.jpg"
         },
         {
+          credit: "Will Calhoun",
           url: "https://i.imgur.com/lD6qppw.jpg"
         },
         {
+          credit: "Will Calhoun",
           url: "https://i.imgur.com/sKfkp7g.jpg"
         },
       ]
@@ -271,9 +301,11 @@ export default class CarouselBackgroundComponent extends Component {
           credit: "Tooraj Khamenehzadeh",
         },
         {
+          credit: "Yi Hsuan Lai",
           url: "https://i.imgur.com/nprfuua.jpg"
         },
         {
+          credit: "Yi Hsuan Lai",
           url: "https://i.imgur.com/WY6Dh3D.jpg"
         },
       ]
@@ -306,5 +338,4 @@ export default class CarouselBackgroundComponent extends Component {
       this.startCarousel();
     }, this.delay)
   }
-
 }
