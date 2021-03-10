@@ -7,14 +7,14 @@
       duration=this.transitionDuration
       rules=this.rules
       as |photo| }}
-      <div class="carousel-credit">
-        <p class="text-white relative bottom-0 left-0 pb-4 pl-4">
-          Photo: {{photo.credit}}
-        </p>
-      </div>
+      <!-- <div class="carousel-credit"> -->
+      <!-- </div> -->
       <div class="carousel-image">
         <img alt="alt {{photo.credit}}" src={{photo.url}} 
-        class="object-cover w-full h-full">
+        class="absolute top-0 left-0 object-cover w-full h-full">
+        <p class="bottom-0 left-0 z-20 text-white absolute bottom-0 left-0 pb-4 pl-4">
+          Photo: {{photo.credit}}
+        </p>
       </div>
   {{/animated-value}}
 </AnimatedContainer>
