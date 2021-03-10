@@ -5,8 +5,283 @@ import { toLeft } from 'ember-animated/transitions/move-over';
 
 export default class CarouselBackgroundComponent extends Component {
 
+  artistPhotos = [
+    { name: "Aaron Bezzina",
+      photos: [
+        {
+          url: "https://i.imgur.com/uofIkmn.jpg",
+          credit: "Norbert Attard"
+        },
+        {
+          url: "https://i.imgur.com/his1nV2.jpg",
+          credit: "Norbert Attard"
+        },
+      ]
+    },
+    { name: "Alex Mirutziu",
+      photos: [
+        {
+          url: "https://i.imgur.com/UED7QKl.jpg"
+        },
+        {
+          url: "https://i.imgur.com/DZHjND3.jpg"
+        },
+      ]
+    },
+    { name: "Barbara Maria Neu",
+      photos: [
+        {
+          url: "https://i.imgur.com/Tmqjbny.jpg",
+          credit: "Igor Ripak"
+        },
+        {
+          url: "https://i.imgur.com/pwky5wg.jpg",
+          credit: "Igor Ripak"
+        },
+        {
+          url: "https://i.imgur.com/wkOtt1e.jpg",
+          credit: "Igor Ripak"
+        },
+        {
+          url: "https://i.imgur.com/ZQdDRYA.jpg",
+          credit: "Tasha Hauber"
+        },
+      ]
+    },
+    { name: "Emmanuel Massillon",
+      photos: [
+        {
+          url: "https://i.imgur.com/71g48Zb.jpg",
+          credit: "Ryan Cosbert"
+        },
+        {
+          url: "https://i.imgur.com/TuYDX5J.jpg",
+          credit: "Ryan Cosbert"
+        },
+        {
+          url: "https://i.imgur.com/v1wQwFu.jpg",
+          credit: "Ryan Cosbert"
+        },
+        {
+          url: "https://i.imgur.com/6VqFNhL.jpg",
+          credit: "Ryan Cosbert"
+        },
+      ]
+    },
+    { name: "Emily Shanahan",
+      photos: [
+        {
+          url: "https://i.imgur.com/O1k2ZjU.jpg"
+        },
+        {
+          url: "https://i.imgur.com/CIQiEN1.jpg",
+          credit: "Michael Faciejew"
+        },
+      ]
+    },
+    { name: "Eren Aksu",
+      photos: [
+        {
+          url: "https://i.imgur.com/7pMJGvf.jpg"
+        },
+        {
+          url: "https://i.imgur.com/6VqFNhL.jpg"
+        },
+      ]
+    },
+    { name: "FOQL",
+      photos: [
+        {
+          url: "https://i.imgur.com/aOAZg62.jpg",
+          credit: "Philipp Schewe"
+        },
+        {
+          url: "https://i.imgur.com/63pjW1Y.jpg",
+          credit: "Slavinsky Vasiliy"
+        },
+      ]
+    },
+    { name: "Gabrielė Gervickaitė",
+      photos: [
+        {
+          url: "https://i.imgur.com/igeNpd9.jpg"
+        },
+        {
+          url: "https://i.imgur.com/CM4TKJV.jpg"
+        },
+        {
+          url: "https://i.imgur.com/Tzsklra.jpg"
+        },
+      ]
+    },
+    { name: "H. Lan Thao Lam",
+      photos: [
+        {
+          url: "https://i.imgur.com/Ds2kyoR.jpg"
+        },
+        {
+          url: "https://i.imgur.com/MuH12IH.jpg",
+          credit: "Lana Lin"
+        },
+      ]
+    },
+    { name: "Kyle Hittmeier",
+      photos: [
+        {
+          url: "https://i.imgur.com/RjvEHpS.jpg"
+        },
+        {
+          url: "https://i.imgur.com/qYQmLOI.jpg"
+        },
+        {
+          url: "https://i.imgur.com/LvD2ACO.jpg"
+        },
+      ]
+    },
+    { name: "Kris Grey",
+      photos: [
+        {
+          url: "https://i.imgur.com/wrlhzzW.jpg",
+          credit: "Courtesy the artist with Daniel King"
+        },
+        {
+          url: "https://i.imgur.com/qi7KzBt.jpg",
+          credit: "Courtesy the artist with Sara Jimenez"
+        },
+        {
+          url: "https://i.imgur.com/UvrQxiT.jpg",
+          credit: "Courtesy the artist in collaboration with Maya Ciarrocchi"
+        },
+      ]
+    },
+    { name: "Marie Lukáčová",
+      photos: [
+        {
+          url: "https://i.imgur.com/J2UoOUg.jpg"
+        },
+        {
+          url: "https://i.imgur.com/I6YsklN.jpg"
+        },
+        {
+          url: "https://i.imgur.com/Mln4MpK.jpg"
+        },
+      ]
+    },
+    { name: "Mo Kong",
+      photos: [
+        {
+          url: "https://i.imgur.com/2ZVYhnj.jpg"
+        },
+        {
+          url: "https://i.imgur.com/z1S5tLi.jpg"
+        },
+        {
+          url: "https://i.imgur.com/UqVhPeA.jpg"
+        },
+      ]
+    },
+    { name: "Olesja Katšanovskaja-Münd",
+      photos: [
+        {
+          url: "https://i.imgur.com/pB8Wzu8.jpg",
+          credit: "Roman Münd"
+        },
+        {
+          url: "https://i.imgur.com/fLMBi8S.jpg",
+          credit: "Roman Münd"
+        },
+        {
+          url: "https://i.imgur.com/VOGQgPF.jpg"
+        },
+      ]
+    },
+    { name: "Sanne De Wilde",
+      photos: [
+        {
+          url: "https://i.imgur.com/wYNAQqZ.jpg"
+        },
+        {
+          url: "https://i.imgur.com/tXJUrmS.jpg"
+        },
+        {
+          url: "https://i.imgur.com/aASe0CN.jpg"
+        },
+      ]
+    },
+    { name: "Sheila Maldonado",
+      photos: [
+        {
+          url: "https://i.imgur.com/8GoEEuj.jpg"
+        },
+        {
+          url: "https://i.imgur.com/WTfu5z0.jpg"
+        },
+        {
+          url: "https://i.imgur.com/ob1tUdE.jpg",
+          credit: "Ying Liu",
+        },
+      ]
+    },
+    { name: "Sophie Guisset",
+      photos: [
+        {
+          url: "https://i.imgur.com/cxfFnp4.jpg"
+        },
+        {
+          url: "https://i.imgur.com/L7lHeTy.jpg",
+          credit: "Fani Bihr"
+        },
+        {
+          url: "https://i.imgur.com/BALAwIA.jpg",
+          credit: "Julien Carlier"
+        },
+      ]
+    },
+    { name: "Sydney Shavers",
+      photos: [
+        {
+          url: "https://i.imgur.com/sn9FWBG.jpg",
+          credit: "Lyric Wills",
+        },
+        {
+          url: "https://i.imgur.com/JbgDC4i.jpg"
+        },
+        {
+          url: "https://i.imgur.com/Smuchx2.jpg"
+        },
+      ]
+    },
+    { name: "Will Calhoun",
+      photos: [
+        {
+          url: "https://i.imgur.com/FispKT1.jpg"
+        },
+        {
+          url: "https://i.imgur.com/lD6qppw.jpg"
+        },
+        {
+          url: "https://i.imgur.com/sKfkp7g.jpg"
+        },
+      ]
+    },
+    { name: "Yi Hsuan Lai",
+      photos: [
+        {
+          url: "https://i.imgur.com/7kpUHMj.jpg",
+          credit: "Tooraj Khamenehzadeh",
+        },
+        {
+          url: "https://i.imgur.com/nprfuua.jpg"
+        },
+        {
+          url: "https://i.imgur.com/WY6Dh3D.jpg"
+        },
+      ]
+    },
+  ]
+
   @tracked
-  activePhoto = this.randomPhoto
+  activePhoto = this.randomPhoto;
 
   @action
   rules() {
@@ -14,7 +289,8 @@ export default class CarouselBackgroundComponent extends Component {
   }
 
   get randomPhoto() {
-    return this.args.photos.objectAt(Math.floor(Math.random() * this.args.photos.length));
+    const artist = this.artistPhotos[Math.floor(Math.random() * this.artistPhotos.length)];
+    return artist.photos[Math.floor(Math.random() * artist.photos.length)];
   }
 
   get delay() {
@@ -22,11 +298,6 @@ export default class CarouselBackgroundComponent extends Component {
   }
 
   transitionDuration = 900;
-
-  updatePhoto() {
-    console.log("updating");
-    this.activePhoto = this.args.photos.lastObject;
-  }
 
   @action
   startCarousel() {
