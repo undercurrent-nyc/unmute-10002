@@ -80,6 +80,14 @@ export default class CarouselBackgroundComponent extends Component {
           url: "https://i.imgur.com/CIQiEN1.jpg",
           credit: "Michael Faciejew"
         },
+        {
+          credit: "Emily Shanahan",
+          url: "https://i.imgur.com/ZzGUOSP.jpg"
+        },
+        {
+          credit: "Emily Shanahan",
+          url: "https://i.imgur.com/tZKPrU4.jpg"
+        },
       ]
     },
     { name: "Eren Aksu",
@@ -110,7 +118,7 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/igeNpd9.jpg"
+          url: "https://i.imgur.com/VSwH22k.jpg"
         },
         {
           credit: "Gabrielė Gervickaitė",
@@ -119,6 +127,22 @@ export default class CarouselBackgroundComponent extends Component {
         {
           credit: "Gabrielė Gervickaitė",
           url: "https://i.imgur.com/Tzsklra.jpg"
+        },
+        {
+          credit: "Gabrielė Gervickaitė",
+          url: "https://i.imgur.com/O1nXkds.jpg"
+        },
+        {
+          credit: "Gabrielė Gervickaitė",
+          url: "https://i.imgur.com/6FUDTso.jpg"
+        },
+        {
+          credit: "Gabrielė Gervickaitė",
+          url: "https://i.imgur.com/7LoFg5I.jpg"
+        },
+        {
+          credit: "Gabrielė Gervickaitė",
+          url: "https://i.imgur.com/qA9YrIR.jpg"
         },
       ]
     },
@@ -211,6 +235,18 @@ export default class CarouselBackgroundComponent extends Component {
         {
           credit: "Olesja Katšanovskaja-Münd",
           url: "https://i.imgur.com/VOGQgPF.jpg"
+        },
+        {
+          url: "https://i.imgur.com/GLQDvdx.jpg",
+          credit: "Roman Münd"
+        },
+        {
+          url: "https://i.imgur.com/CYXfddT.jpg",
+          credit: "Roman Münd"
+        },
+        {
+          url: "https://i.imgur.com/ZoGNzfs.jpg",
+          credit: "Roman Münd"
         },
       ]
     },
