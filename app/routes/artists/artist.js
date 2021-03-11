@@ -4,6 +4,7 @@ import RSVP from "rsvp";
 export default class ArtistsArtistRoute extends Route {
   async model({ id }){
     const artist = await this.store.findRecord("artist", id, { include: "team,team.artists" });
+    const teams = await this.store.findAll("team");
     const clips = await this.store.findAll("clip");
     return RSVP.hash({
       artist,

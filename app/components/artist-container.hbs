@@ -7,7 +7,7 @@
   <div class="w-full flex flex-row">
     <div class="hidden md:flex w-1/4 flex-col space-y-2">
       <h3 class="text-base md:text-3xl uppercase font-semibold tracking-wide">
-        <LinkTo @model={{@artist.team}} @route="team.team"
+        <LinkTo @model={{@artist.team.id}} @route="team.team"
           class="underline hover:text-alt{{@artist.team.color}}"
           >
           {{@artist.team.name}}
@@ -19,7 +19,7 @@
       <p class="text-xl">
         <LinkTo class="underline hover:text-alt{{@artist.team.color}} font-normal"
           @route="artists.artist"
-          @model={{this.teammate}}
+          @model={{this.teammate.id}}
         >
           {{this.teammate.displayName}}
         </LinkTo>
