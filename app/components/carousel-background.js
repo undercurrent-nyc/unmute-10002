@@ -73,10 +73,6 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Emily Shanahan",
       photos: [
         {
-          credit: "Emily Shanahan",
-          url: "https://i.imgur.com/O1k2ZjU.jpg"
-        },
-        {
           url: "https://i.imgur.com/CIQiEN1.jpg",
           credit: "Michael Faciejew"
         },
@@ -225,18 +221,6 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Olesja Katšanovskaja-Münd",
       photos: [
         {
-          url: "https://i.imgur.com/pB8Wzu8.jpg",
-          credit: "Roman Münd"
-        },
-        {
-          url: "https://i.imgur.com/fLMBi8S.jpg",
-          credit: "Roman Münd"
-        },
-        {
-          credit: "Olesja Katšanovskaja-Münd",
-          url: "https://i.imgur.com/VOGQgPF.jpg"
-        },
-        {
           url: "https://i.imgur.com/GLQDvdx.jpg",
           credit: "Roman Münd"
         },
@@ -255,10 +239,6 @@ export default class CarouselBackgroundComponent extends Component {
         {
           credit: "Sanne De Wilde",
           url: "https://i.imgur.com/wYNAQqZ.jpg"
-        },
-        {
-          credit: "Sanne De Wilde",
-          url: "https://i.imgur.com/tXJUrmS.jpg"
         },
         {
           credit: "Sanne De Wilde",
