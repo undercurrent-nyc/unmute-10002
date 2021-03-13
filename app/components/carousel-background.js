@@ -65,7 +65,7 @@ export default class CarouselBackgroundComponent extends Component {
           credit: "Ryan Cosbert"
         },
         {
-          url: "https://i.imgur.com/6VqFNhL.jpg",
+          url: "https://i.imgur.com/MAbYOFm.jpg",
           credit: "Ryan Cosbert"
         },
       ]
