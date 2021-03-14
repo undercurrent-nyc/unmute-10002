@@ -10,13 +10,17 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "wooden weight room",
-          url: "https://i.imgur.com/uofIkmn.jpg",
+          url: "https://i.imgur.com/kMFr1gf.jpeg",
           credit: "Norbert Attard"
         },
         {
           description: "wooden spiky table",
-          url: "https://i.imgur.com/his1nV2.jpg",
+          url: "https://i.imgur.com/JPMD94n.jpeg",
           credit: "Norbert Attard"
+        },
+        {
+          description: "portrait",
+          url: "https://i.imgur.com/JUdoAfw.jpeg"
         },
       ]
     },
@@ -25,12 +29,12 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "wide stance pose",
           credit: "Alex Mirutziu",
-          url: "https://i.imgur.com/UED7QKl.jpg"
+          url: "https://i.imgur.com/mBWjmVF.jpeg"
         },
         {
           description: "dabbing",
           credit: "Alex Mirutziu",
-          url: "https://i.imgur.com/DZHjND3.jpg"
+          url: "https://i.imgur.com/xauOFdI.jpeg"
         },
       ]
     },
@@ -38,22 +42,17 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "sitting in booth with clarinet lying on table",
-          url: "https://i.imgur.com/Tmqjbny.jpg",
+          url: "https://i.imgur.com/ij3o3tL.jpeg",
           credit: "Igor Ripak"
         },
         {
           description: "leaning against pool table",
-          url: "https://i.imgur.com/pwky5wg.jpg",
-          credit: "Igor Ripak"
-        },
-        {
-          description: "sitting in booth with clarinet *standing* on table",
-          url: "https://i.imgur.com/wkOtt1e.jpg",
+          url: "https://i.imgur.com/BQJ12vq.jpeg",
           credit: "Igor Ripak"
         },
         {
           description: "leaning into ivy-covered wall",
-          url: "https://i.imgur.com/ZQdDRYA.jpg",
+          url: "https://i.imgur.com/xa7KrO7.jpeg",
           credit: "Tasha Hauber"
         },
       ]
@@ -61,23 +60,18 @@ export default class CarouselBackgroundComponent extends Component {
     { name: "Emmanuel Massillon",
       photos: [
         {
-          description: "holding work",
-          url: "https://i.imgur.com/71g48Zb.jpg",
-          credit: "Ryan Cosbert"
-        },
-        {
           description: "standing among work, US flag",
-          url: "https://i.imgur.com/TuYDX5J.jpg",
+          url: "https://i.imgur.com/vFEKNug.jpeg",
           credit: "Ryan Cosbert"
         },
         {
           description: "using sander",
-          url: "https://i.imgur.com/v1wQwFu.jpg",
+          url: "https://i.imgur.com/3qes8GB.jpeg",
           credit: "Ryan Cosbert"
         },
         {
           description: "with gloves, making something black",
-          url: "https://i.imgur.com/MAbYOFm.jpg",
+          url: "https://i.imgur.com/3xAxCMN.jpeg",
           credit: "Ryan Cosbert"
         },
       ]
@@ -86,32 +80,37 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "rooftop portrait",
-          url: "https://i.imgur.com/CIQiEN1.jpg",
+          url: "https://i.imgur.com/7P7PSqC.jpeg",
           credit: "Michael Faciejew"
         },
         {
           description: "Siri bracelet",
           credit: "Emily Shanahan",
-          url: "https://i.imgur.com/ZzGUOSP.jpg"
+          url: "https://i.imgur.com/upSuZpe.jpeg"
         },
         {
           description: "vents among ivy wall",
           credit: "Emily Shanahan",
-          url: "https://i.imgur.com/tZKPrU4.jpg"
+          url: "https://i.imgur.com/Tkdxw8h.jpeg"
         },
       ]
     },
     { name: "Eren Aksu",
       photos: [
         {
-          description: "Eren looking into screen",
-          credit: "Eren Aksu",
-          url: "https://i.imgur.com/7pMJGvf.jpg"
-        },
-        {
           description: "Eren holding boom mic",
           credit: "Eren Aksu",
-          url: "https://i.imgur.com/6VqFNhL.jpg"
+          url: "https://i.imgur.com/avTE4sQ.jpeg"
+         },
+        {
+          description: "Still from film of people on beach",
+          credit: "Eren Aksu",
+          url: "https://i.imgur.com/wUgI5AT.jpeg"
+        },
+        {
+          description: "Eren looking into screen",
+          credit: "Eren Aksu",
+          url: "https://i.imgur.com/avTE4sQ.jpeg"
         },
       ]
     },
@@ -119,12 +118,12 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "purple background djing",
-          url: "https://i.imgur.com/aOAZg62.jpg",
+          url: "https://i.imgur.com/ayB5T7U.jpeg",
           credit: "Philipp Schewe"
         },
         {
           description: "b/w djing",
-          url: "https://i.imgur.com/63pjW1Y.jpg",
+          url: "https://i.imgur.com/QgCldr0.jpeg",
           credit: "Slavinsky Vasiliy"
         },
       ]
@@ -134,37 +133,17 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "portrait among people in swimsuits",
           credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/VSwH22k.jpg"
-        },
-        {
-          description: "portrait in snow, facing camera",
-          credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/CM4TKJV.jpg"
-        },
-        {
-          description: "portrait in snow, facing away",
-          credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/Tzsklra.jpg"
-        },
-        {
-          description: "barn slats photo",
-          credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/O1nXkds.jpg"
-        },
-        {
-          description: "face wrapped in bandages",
-          credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/6FUDTso.jpg"
+          url: "https://i.imgur.com/Mj1vCsg.jpeg"
         },
         {
           description: "plastic arms",
           credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/7LoFg5I.jpg"
+          url: "https://i.imgur.com/Wl2AnGR.jpeg"
         },
         {
           description: "legs photo",
           credit: "Gabrielė Gervickaitė",
-          url: "https://i.imgur.com/qA9YrIR.jpg"
+          url: "https://i.imgur.com/b4ifpY4.jpeg"
         },
       ]
     },
@@ -173,11 +152,11 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "with figurine",
           credit: "H. Lan Thao Lam",
-          url: "https://i.imgur.com/Ds2kyoR.jpg"
+          url: "https://i.imgur.com/lhl0Tqu.jpeg"
         },
         {
           description: "sawing wood",
-          url: "https://i.imgur.com/MuH12IH.jpg",
+          url: "https://i.imgur.com/4ShNRSH.jpeg",
           credit: "Lana Lin"
         },
       ]
@@ -187,17 +166,17 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "b/w closeup portrait",
           credit: "Kyle Hittmeier",
-          url: "https://i.imgur.com/RjvEHpS.jpg"
+          url: "https://i.imgur.com/HbAWLVM.jpeg"
         },
         {
           description: "paper trumpets in iron fence",
           credit: "Kyle Hittmeier",
-          url: "https://i.imgur.com/qYQmLOI.jpg"
+          url: "https://i.imgur.com/FBbSyKt.jpeg"
         },
         {
           description: "mosaic padlock",
           credit: "Kyle Hittmeier",
-          url: "https://i.imgur.com/LvD2ACO.jpg"
+          url: "https://i.imgur.com/vbjN0tL.jpeg"
         },
       ]
     },
@@ -205,17 +184,17 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "balancing book on head",
-          url: "https://i.imgur.com/wrlhzzW.jpg",
+          url: "https://i.imgur.com/1SJ8yS8.jpeg",
           credit: "Courtesy the artist with Daniel King"
         },
         {
           description: "nude",
-          url: "https://i.imgur.com/qi7KzBt.jpg",
+          url: "https://i.imgur.com/TMdYmSe.jpeg",
           credit: "Courtesy the artist with Sara Jimenez"
         },
         {
           description: "with wedding dress",
-          url: "https://i.imgur.com/UvrQxiT.jpg",
+          url: "https://i.imgur.com/bJHGYq4.jpeg",
           credit: "Courtesy the artist in collaboration with Maya Ciarrocchi"
         },
       ]
@@ -225,17 +204,17 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "hanging out",
           credit: "Marie Lukáčová",
-          url: "https://i.imgur.com/J2UoOUg.jpg"
+          url: "https://i.imgur.com/MvVOfpV.jpeg"
         },
         {
           description: "silver pearl thing",
           credit: "Marie Lukáčová",
-          url: "https://i.imgur.com/I6YsklN.jpg"
+          url: "https://i.imgur.com/ZH06xOI.jpeg"
         },
         {
           description: "feet",
           credit: "Marie Lukáčová",
-          url: "https://i.imgur.com/Mln4MpK.jpg"
+          url: "https://i.imgur.com/xZotVtI.jpeg"
         },
       ]
     },
@@ -244,17 +223,17 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "portrait doing work",
           credit: "Mo Kong",
-          url: "https://i.imgur.com/2ZVYhnj.jpg"
+          url: "https://i.imgur.com/p1HDNCM.jpeg"
         },
         {
           description: "domestic development art",
           credit: "Mo Kong",
-          url: "https://i.imgur.com/z1S5tLi.jpg"
+          url: "https://i.imgur.com/TWSv0wg.jpeg"
         },
         {
           description: "sand america?",
           credit: "Mo Kong",
-          url: "https://i.imgur.com/UqVhPeA.jpg"
+          url: "https://i.imgur.com/o3Fx5ig.jpeg"
         },
       ]
     },
@@ -262,17 +241,17 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "closeup portrait with plastic wrap",
-          url: "https://i.imgur.com/GLQDvdx.jpg",
+          url: "https://i.imgur.com/t0ntPh6.jpeg",
           credit: "Roman Münd"
         },
         {
           description: "among wrapped things",
-          url: "https://i.imgur.com/CYXfddT.jpg",
+          url: "https://i.imgur.com/xZbmcqd.jpeg",
           credit: "Roman Münd"
         },
         {
           description: "with clay mask",
-          url: "https://i.imgur.com/ZoGNzfs.jpg",
+          url: "https://i.imgur.com/EOPIESt.jpeg",
           credit: "Roman Münd"
         },
       ]
@@ -282,12 +261,17 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "color blind island",
           credit: "Sanne De Wilde",
-          url: "https://i.imgur.com/wYNAQqZ.jpg"
+          url: "https://i.imgur.com/b4i70kn.jpeg"
+        },
+        {
+          description: "flash photograph", 
+          credit: "Sanne De Wilde",
+          url: "https://i.imgur.com/tc9bQz3.jpeg"
         },
         {
           description: "in covid mask", 
           credit: "Sanne De Wilde",
-          url: "https://i.imgur.com/aASe0CN.jpg"
+          url: "https://i.imgur.com/hua3Uej.jpeg"
         },
       ]
     },
@@ -296,16 +280,16 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "on bicycle",
           credit: "Sheila Maldonado",
-          url: "https://i.imgur.com/8GoEEuj.jpg"
+          url: "https://i.imgur.com/pAv41eI.jpeg"
         },
         {
           description: "reading",
           credit: "Sheila Maldonado",
-          url: "https://i.imgur.com/WTfu5z0.jpg"
+          url: "https://i.imgur.com/O0nWO3k.jpeg"
         },
         {
           description: "dancing",
-          url: "https://i.imgur.com/ob1tUdE.jpg",
+          url: "https://i.imgur.com/Gk1c1ms.jpeg",
           credit: "Ying Liu",
         },
       ]
@@ -315,16 +299,16 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "two people grieving",
           credit: "Sophie Guisset",
-          url: "https://i.imgur.com/cxfFnp4.jpg"
+          url: "https://i.imgur.com/xqBZwfF.jpeg"
         },
         {
           description: "playing tennis",
-          url: "https://i.imgur.com/L7lHeTy.jpg",
+          url: "https://i.imgur.com/466gWk5.jpeg",
           credit: "Fani Bihr"
         },
         {
           description: "closeup portrait",
-          url: "https://i.imgur.com/BALAwIA.jpg",
+          url: "https://i.imgur.com/JMIjzJ2.jpeg",
           credit: "Julien Carlier"
         },
       ]
@@ -333,18 +317,13 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "pointing butt at window",
-          url: "https://i.imgur.com/sn9FWBG.jpg",
+          url: "https://i.imgur.com/8REhqXY.jpeg",
           credit: "Lyric Wills",
         },
         {
           description: "in Marie Antoinette wig",
           credit: "Sydney Shavers",
-          url: "https://i.imgur.com/JbgDC4i.jpg"
-        },
-        {
-          description: "on green chair",
-          credit: "Sydney Shavers",
-          url: "https://i.imgur.com/Smuchx2.jpg"
+          url: "https://i.imgur.com/JEVMvAh.jpeg"
         },
       ]
     },
@@ -353,17 +332,17 @@ export default class CarouselBackgroundComponent extends Component {
         {
           description: "holding iphone at drum kit",
           credit: "Will Calhoun",
-          url: "https://i.imgur.com/FispKT1.jpg"
+          url: "https://i.imgur.com/Q3qycC7.jpeg"
         },
         {
           description: "happy playing drums",
           credit: "Will Calhoun",
-          url: "https://i.imgur.com/lD6qppw.jpg"
+          url: "https://i.imgur.com/GoGO3Di.jpeg"
         },
         {
           description: "relaxing",
           credit: "Will Calhoun",
-          url: "https://i.imgur.com/sKfkp7g.jpg"
+          url: "https://i.imgur.com/es4N75s.jpeg"
         },
       ]
     },
@@ -371,18 +350,18 @@ export default class CarouselBackgroundComponent extends Component {
       photos: [
         {
           description: "exhibition shot",
-          url: "https://i.imgur.com/7kpUHMj.jpg",
+          url: "https://i.imgur.com/uMWF5JJ.jpeg",
           credit: "Tooraj Khamenehzadeh",
         },
         {
           description: "small figurines",
           credit: "Yi Hsuan Lai",
-          url: "https://i.imgur.com/nprfuua.jpg"
+          url: "https://i.imgur.com/LGoiY4d.jpeg"
         },
         {
           description: "portrait holding figurine",
           credit: "Yi Hsuan Lai",
-          url: "https://i.imgur.com/WY6Dh3D.jpg"
+          url: "https://i.imgur.com/hlSPRv1.jpeg"
         },
       ]
     },
