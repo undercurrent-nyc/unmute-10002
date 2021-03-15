@@ -12,10 +12,8 @@ Router.map(function () {
     this.route('clip', { path: '/:id' });
   });
   this.route('teams');
-  this.route('artists', function() {
-    this.route('artist', { path: '/:id' });
-  });
-
+  this.route('artists.artist', { path: '/artists/:id' });
+  this.route('artists');
   this.route('team', function() {
     this.route('team', { path: '/:team_id' }, function() {
       this.route('clip', {path:'/:clip_id' });

@@ -1,1 +1,11 @@
-<ArtistContainer @artist={{@model}} />
+<Container>
+  <LinkTo @route="artists" class="text-right nav-artists block md:hidden text-sm font-semibold pb-4">/artists</LinkTo>
+  <ArtistContainer @artist={{@model.artist}} />
+  <Grid>
+  {{log @model.clips}}
+    {{#each @model.clips as |clip|}}
+      <TeamClipTile @clip={{clip}} @team={{@model.artist.team}}  /> 
+    {{/each}}
+  </Grid>
+  <BottomBorder @color="blue" />
+</Container>

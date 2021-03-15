@@ -27,7 +27,7 @@
               {{#each @clip.team.artists as |artist|}}
                 <div class="flex flex-row md:flex-col justify-between pb-2 md:pb-3">
                   <h3 class="font-semibold md:font-normal text-xs md:text-xl">
-                    <LinkTo @route="artists.artist" @model={{artist}} class="underline hover:text-alt{{@clip.team.color}}">
+                    <LinkTo @route="artists.artist" @model={{artist.id}} class="underline hover:text-alt{{@clip.team.color}}">
                       {{artist.displayName}}
                     </LinkTo>
                   </h3>

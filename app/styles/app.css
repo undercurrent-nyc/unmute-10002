@@ -72,7 +72,16 @@ body {
   background-position: center;
   image-rendering: pixelated;
   display: block;
-  @apply absolute top-0 left-0 bottom-0 right-0 z-0 h-full w-full;
+  @apply absolute top-0 left-0 bottom-0 right-0 z-10 h-full w-full;
+}
+
+.carousel-credit {
+  @apply w-full h-full absolute top-0 left-0 bottom-0 right-0 flex flex-col justify-end;
+}
+
+.carousel-image {
+  z-index: -1;
+  @apply w-full h-full overflow-hidden;
 }
 
 
