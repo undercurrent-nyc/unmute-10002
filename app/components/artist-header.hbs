@@ -9,7 +9,7 @@
     {{/if}}
   </div>
   <div class="flex flex-row w-full md:w-3/4">
-      <LinkTo @route="team.team" @model={{@artist.team.id}}
+      <LinkTo @route="teams.team" @model={{@artist.team.id}}
         class="w-1/3">
         {{svg-jar (concat @artist.team.id "-logo") class="w-full fill-current"}}
       </LinkTo>
