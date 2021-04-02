@@ -1,4 +1,4 @@
-{{#let (if @clip.team @clip.team.color "purple") as |color|}}
+{{#let (if @team @team.color "purple") as |color|}}
   <article class="
     pb-16
     flex flex-col md:flex-row-reverse
@@ -19,15 +19,15 @@
     <div class="pt-3 md:pt-0 flex flex-col md:pr-6 w-full md:w-1/4">
       <div class="w-full">
         <h2 class="pb-1 md:pb-4
-          text-base md:text-3xl uppercase font-semibold tracking-wide">{{if @clip.team @clip.team.name "lottery"}}</h2>
+          text-base md:text-3xl uppercase font-semibold tracking-wide">{{if @team @team.name "lottery"}}</h2>
 
         {{#unless @noName}}
-          {{#if @clip.team}}
+          {{#if @team}}
             <div class="pb-4">
-              {{#each @clip.team.artists as |artist|}}
+              {{#each @team.artists as |artist|}}
                 <div class="flex flex-row md:flex-col justify-between pb-2 md:pb-3">
                   <h3 class="font-semibold md:font-normal text-xs md:text-xl">
-                    <LinkTo @route="artists.artist" @model={{artist.id}} class="underline hover:text-alt{{@clip.team.color}}">
+                    <LinkTo @route="artists.artist" @model={{artist.id}} class="underline hover:text-alt{{color}}">
                       {{artist.displayName}}
                     </LinkTo>
                   </h3>

@@ -3,6 +3,7 @@ import RSVP from "rsvp";
 
 export default class TeamsTeamRoute extends Route {
   async model({ team_id }) {
+    console.log("in teams.team");
     const clips = await this.store.findAll("clip");
     // Need to load all teams so relationship filter below works.
     const teams = await this.store.findAll("team", {include: "artists"});
@@ -14,9 +15,9 @@ export default class TeamsTeamRoute extends Route {
     });
   }
 
-  // afterModel(model) {
-  //   if (model.clips.length > 1) {
-  //     this.transitionTo(`/team/${model.team.id}/${model.clips[0].id}`);
-  //   }
-  // }
+  redirect(model) {
+    if (model.clips.length > 1) {
+      this.transitionTo(`/teams/${model.team.id}/${model.clips[0].id}`);
+    }
+  }
 }
