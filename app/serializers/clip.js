@@ -20,6 +20,7 @@ export default class ClipSerializer extends RESTSerializer {
           newRecord.youtubeUrl = record.fields.youtubeUrl;
           newRecord.order = record.fields.revOrder;
           newRecord.date = record.fields.date;
+          newRecord.noTeamTitle = record.fields.noTeamTitle;
           newRecord.id = newRecord.youtubeUrl.replace("https://youtu.be/", "");
           newRecord.team = record.fields.teamId
           clips.push(newRecord);

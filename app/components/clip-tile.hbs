@@ -12,7 +12,7 @@
    pl-2 md:pl-5
    font-semibold text-un{{if @clip.team @clip.team.color "purple"}}">
    <p class="text-2xs font-bold md:font-semibold md:text-xl">{{@clip.date}}</p>
-   <p class="pt-1 md:pt-4 pb-0 md:pb-2 text-2xs font-semibold md:font-normal md:text-3xl uppercase">{{if @clip.team @clip.team.name "LOTTERY"}}</p>
+   <p class="pt-1 md:pt-4 pb-0 md:pb-2 text-2xs font-semibold md:font-normal md:text-3xl uppercase">{{if @clip.team @clip.team.name @clip.noTeamTitle}}</p>
    {{#if @clip.team}}
      {{#each @clip.team.artists as |artist|}}
        <p class="font-normal md:font-abnormal text-2xs md:text-xl tracking-wide">{{artist.displayName}}</p>

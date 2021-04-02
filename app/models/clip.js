@@ -4,4 +4,5 @@ export default class ClipModel extends Model {
   @belongsTo("team", { async: true }) team;
   @attr("string") youtubeUrl;
   @attr("string") date;
+  @attr("string") noTeamTitle;
 }
