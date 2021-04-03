@@ -8,6 +8,6 @@
   </svg>
   <p class="flex flex-row justify-between font-semibold pt-2 
                text-xs md:text-xl tile-text text-un{{@team.color}}">
-      {{@clip.date}}
-    </p>
+    {{if @clip.noTeamTitle @clip.noTeamTitle @clip.date}}
+  </p>
 </LinkTo>
