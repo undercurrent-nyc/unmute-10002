@@ -4,6 +4,21 @@
     {{#each (shuffle @model) as |team|}}
       <TeamTile @team={{team}} />
     {{/each}}
+    <LinkTo 
+      @route="consultants"
+      class="
+      team-tile
+      w-full
+      flex flex-col
+      text-black
+      hover:text-unpurple
+      ">
+      {{svg-jar "arrow-logo" class="fill-current"}}
+      <h3 class="pb-1 md:pb-2 pt-3
+        text-base md:text-2xl uppercase font-semibold tracking-wide">Consultants /Arrow</h3>
+        <h4 class="font-normal text-xs md:text-xl">/more</h4>
+    </LinkTo>
+
   </Grid>
   <BottomBorder @color="green" />
 </Container>
