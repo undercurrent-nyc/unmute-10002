@@ -16,4 +16,9 @@ export default class TeamsTeamClipRoute extends Route {
     });
   }
 
+  afterModel(model) {
+    if(model.clip.noTeamTitle) {
+      model.clip.team = null;
+    }
+  }
 }
