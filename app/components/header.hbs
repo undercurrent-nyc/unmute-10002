@@ -1,12 +1,14 @@
 <header class="
-  pb-2 md:pb-14
+  py-2 md:pb-14
   flex flex-row-reverse justify-between flex-row md:flex-col
-  w-full">
+  w-full
+  bg-white
+  z-50
+  {{"sticky top-0" if @sticky}}
+  ">
   <LinkTo role="button" 
     @route="clips" class="md:w-full flex flex-row justify-end items-end flex-grow-1 h-5 md:h-14">
       {{svg-jar "unmute" class="fill-current h-full"}}
   </LinkTo>
   <NavBar />
 </header>
-    
-

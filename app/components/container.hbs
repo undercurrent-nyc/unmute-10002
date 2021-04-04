@@ -1,8 +1,9 @@
 <div class="
   px-4 md:px-24 
   pt-4 md:pt-10
+  relative
   ">
-  <Header />
+  <Header @sticky={{@sticky}} />
   {{yield}}
   <Footer />
 </div>

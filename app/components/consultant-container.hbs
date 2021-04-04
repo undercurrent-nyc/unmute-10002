@@ -1,0 +1,23 @@
+<section class="
+  pb-10">
+
+  <ConsultantHeader @consultant={{@consultant}} />
+
+  <div class="w-full flex flex-col">
+    <div class="w-full md:pl-20 
+      {{if this.moreShown "" "h-20"}}
+      overflow-hidden">
+      <TextBox @markdownPath={{concat "consultant-bios/" @consultant.id}} />
+    </div>
+    <p 
+      role="button"
+      {{on "click" this.showMore}}
+      class="
+        font-normal
+        w-full
+        hover:text-altpurple text-left underline
+        md:pl-20">
+      {{if this.moreShown "/less" "/more"}}
+    </p>
+  </div>
+</section>

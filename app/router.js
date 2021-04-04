@@ -23,4 +23,5 @@ Router.map(function () {
       this.route('clip', {path:'/:clip_id' });
     });
   });
+  this.route('consultants');
 });

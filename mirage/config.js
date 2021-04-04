@@ -25,6 +25,7 @@ export default function() {
   */
   this.resource("artist");
   this.resource("team");
+  this.resource("consultant");
 
   this.passthrough("https://api.airtable.com/**");
   this.passthrough("https://youtube.googleapis.com/**");
