@@ -20,7 +20,9 @@
           </p>
           <ArtistLinks @artist={{@consultant}} />
         </div>
-        <p class="font-normal text-2xs md:text-lg">Consulting 
+        <p class="
+          pt-3 md:pt-0
+          font-normal text-2xs md:text-lg">Consulting 
           <LinkTo class="underline text-un{{@consultant.team.color}} hover:text-alt{{@consultant.team.color}}" @route="teams.team" @model={{@consultant.team.id}}>
             {{@consultant.team.name}}
           </LinkTo>
