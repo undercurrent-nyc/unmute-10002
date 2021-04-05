@@ -1,5 +1,5 @@
 <header class="pb-3 md:-b-0 w-full flex flex-col md:flex-row-reverse">
-  <div class="w-full md:w-1/4 {{if @consultant.photoCredit "pb-1" "pb-4"}}">
+  <div class="w-full md:w-1/3 {{if @consultant.photoCredit "pb-1" "pb-4"}}">
     <img src={{@consultant.imgUrl}}
          alt="{{@consultant.displayName}} {{if @consultant.photoCredit (concat "by " @consultant.photoCredit)}}" />
     {{#if @consultant.photoCredit}}
@@ -9,16 +9,18 @@
     {{/if}}
   </div>
   <div class="flex flex-row w-full md:w-3/4">
-      <div class="md:pl-20 pl-3 flex flex-col space-y-3">
-        <h2 class="text-unbrown
-                 underline text-base md:text-3xl font-normal tracking-wide">
-          {{@consultant.displayName}}
-        </h2>
-        <p class="font-normal text-2xs md:text-base">
-          {{@consultant.pronouns}}
-        </p>
-        <ArtistLinks @artist={{@consultant}} />
-        <p class="justify-self-stretch font-normal text-2xs md:text-lg">Consulting 
+      <div class="md:pl-20 pl-3 flex flex-col justify-between">
+        <div class="flex flex-col space-y-3">
+          <h2 class="text-unbrown
+                   underline text-base md:text-3xl font-normal tracking-wide">
+            {{@consultant.displayName}}
+          </h2>
+          <p class="font-normal text-2xs md:text-base">
+            {{@consultant.pronouns}}
+          </p>
+          <ArtistLinks @artist={{@consultant}} />
+        </div>
+        <p class="font-normal text-2xs md:text-lg">Consulting 
           <LinkTo class="underline text-un{{@consultant.team.color}} hover:text-alt{{@consultant.team.color}}" @route="teams.team" @model={{@consultant.team.id}}>
             {{@consultant.team.name}}
           </LinkTo>
