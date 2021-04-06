@@ -127,14 +127,14 @@ body {
 .clip-tile polygon.blue,
 .team-clip-tile polygon.brown,
 .team-clip-tile.active rect.blue.inverse,
-.team-clip-tile.active rect.purple.inverse,
 .team-clip-tile.active polygon.brown,
+.team-clip-tile polygon.purple,
+.team-clip-tile.active polygon.purple,
 .team-clip-tile rect.brown.inverse,
 .team-clip-tile rect.blue,
-.team-clip-tile rect.purple,
 .text-box.text-unpurple a:hover,
 .text-box.text-unblue a:hover,
-.active .tile-text.text-unblue, .active .tile-text.text-unpurple {
+.active .tile-text.text-unblue {
   color: #9b591e;
   fill: #9b591e;
 }
@@ -154,7 +154,8 @@ body {
   fill: #0963b5;
 }
 
-.team-clip-tile polygon.purple,
+.team-clip-tile rect.purple,
+.team-clip-tile.active rect.purple.inverse,
 .clip-tile.active rect.purple.inverse, 
 .clip-tile rect.purple {
   fill: #6043ba;
