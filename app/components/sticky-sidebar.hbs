@@ -1,10 +1,8 @@
-<aside class="
-       sticky-sidebar
-       hidden md:block
-       w-1/4
-       p-0
-       m-0
-
-">
+<div class="flex flex-col md:flex-row space-y-3 md:space-y-0 
+     sticky-sidebar-container
+     text-un{{@color}}
+  "
+   {{did-insert this.makeSticky}}
+  >
 {{yield}}
-</aside>
+</div>
