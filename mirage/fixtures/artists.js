@@ -77,7 +77,7 @@ export default [
     pronouns: "they/their",
     imgUrl: "https://i.imgur.com/rq8RLfW.jpg",
     photoCredit: "H. Lan Thao Lam",
-    url: "http://www.hlanthaolam.com/",
+    url: "http://www.linpluslam.com/",
     facebook: "https://www.facebook.com/h.lanthao.lam/",
     country: "NYC",
     generation: "immigrant",
