@@ -1,0 +1,14 @@
+.text-box h2 {
+  @apply text-2xl font-medium;
+}
+
+.text-box p {
+  @apply pb-6 md:pb-8;
+}
+
+.text-box a {
+  @apply underline
+}
+
+
+

@@ -1,8 +1,6 @@
-
-h2 {
-  @apply underline;
-}
-
-
-@import "./components/video-background.css";
+@import "./components/carousel.css";
+@import "./components/nav.css";
 @import "./components/player.css";
+@import "./components/sticky-sidebar.css";
+@import "./components/text-box.css";
+@import "./components/video-background.css";

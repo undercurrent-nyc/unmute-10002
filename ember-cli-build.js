@@ -6,21 +6,38 @@ const tailwind = require("tailwindcss");
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    "ember-cli-babel": {
+      includePolyfill: true, //so it works on IEii
+    },
     // Add options here
     postcssOptions: {
       compile: {
-        enabled: true,
-        cacheInclude: [/.*\.(css|scss)$/, /.tailwind\.js$/],
+        // enabled: true,
+        // cacheInclude: [/.*\.(css|scss)$/, /.tailwind\.js$/],
         plugins: [
+          {
+            module: require('postcss-import'),
+            options: {
+              path: ['node_modules']
+            }
+          },
+          tailwind('./app/tailwind/config.js'),
+          autoprefixer,
+          require("postcss-preset-env")(
+            {
+              stage: 1,
+            }
+          ),
           // {
           //   module: autoprefixer,
           // },
-          tailwind("./app/tailwind/config.js"),
+          // tailwind("./app/tailwind/config.js"),
         ],
       },
-      filter: {
-        enabled: false,
-      },
+      // filter: {
+      //   enabled: true,
+      //   include: ['styles/*.css'],
+      // },
     },
   });
 
