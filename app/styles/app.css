@@ -2,7 +2,7 @@
 
 @import "tailwindcss/components";
 
-/* @import "components.css"; */
+@import "components.css";
 
 @import "tailwindcss/utilities";
 
@@ -46,6 +46,10 @@ body {
 
 .nav-artists.active {
   @apply text-unblue underline;
+}
+
+.nav-podcast.active {
+  @apply text-unbrown underline;
 }
 
 .video-wrapper iframe {
@@ -189,3 +193,4 @@ aside sidebar__inner{
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
 }
+

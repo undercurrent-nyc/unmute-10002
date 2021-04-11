@@ -1,1 +1,8 @@
+
+h2 {
+  @apply underline;
+}
+
+
 @import "./components/video-background.css";
+@import "./components/player.css";

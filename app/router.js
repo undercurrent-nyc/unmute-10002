@@ -24,4 +24,7 @@ Router.map(function () {
     });
   });
   this.route('consultants');
+  this.route('podcast', function() {
+    this.route('episode', { path: 'episode/:id' });
+  });
 });

@@ -1,0 +1,65 @@
+<div class="player w-full 
+  mb-6
+  flex flex-row 
+  rounded
+  border-unbrown
+  border-2
+
+  relative z-20">
+  <!-- <div class="player-backdrop h-20 top-0 z-10"> -->
+  <!--   <svg class="absolute h-full w-full left-0"> -->
+  <!--     <defs> -->
+  <!--       <filter id="blur"> -->
+  <!--         <feGaussianBlur in="SourceGraphic" stdDeviation="10"> -->
+  <!--         </feGaussianBlur> -->
+  <!--       </filter> -->
+  <!--     </defs> -->
+  <!--     <image filter="url(#blur)" --> 
+  <!--       preserveAspectRatio="xMidYMid slice" -->
+  <!--       xlink:href={{@episode.imageURL}} -->
+  <!--       x="0" y="0" height="100%" width="100%"></image> -->
+  <!--   </svg> -->
+  <!-- </div> -->
+
+  <audio src={{@episode.sound}} preload="metadata"
+    class="hidden audio-player"
+    {{on "loadedmetadata" this.parseMetadata}}
+  />
+  <div class="w-1/3 flex flex-col justify-center items-center">
+    <div class="w-full flex flex-row">
+      <p class="current-time">{{this.currentTime}}</p>
+      <Input 
+        class="flex-grow-1"
+        type="range"
+        @id="seek-slider"
+        max={{this.seekSliderMax}}
+        min="0"
+        {{on "input" this.showRangeProgress}}
+       />
+      <p class="duration">{{this.duration}}</p>
+    </div>
+    <div class="w-full flex flex-row">
+      <output id="volume-output">100</output>
+      <Input 
+        class="flex-grow-1"
+        type="range"
+        @id="volume-slider"
+        max="100"
+        value="100"
+        min="0"
+        {{on "input" this.showRangeProgress}}
+       />
+      <button id="mute-icon">
+        mute
+      </button>
+    </div>
+  </div>
+  <div class="w-1/3 flex justify-center items-center">
+    <button {{on "click" this.playButton}} class="h-20 play-button">
+      {{svg-jar this.playIcon class="h-20 w-20 fill-current"}}
+    </button>
+  </div>
+  <div class="w-1/3">
+    <p>{{@episode.title}}</p>
+  </div>
+</div>

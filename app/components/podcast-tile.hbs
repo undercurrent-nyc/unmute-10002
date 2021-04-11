@@ -1,0 +1,31 @@
+<section class="flex flex-col md:flex-row w-full space-x-6
+         pb-8
+         border-solid border-b-2 border-un{{@episode.color}}  
+         text-un{{@episode.color}}">
+  <div class="w-full md:w-1/4">
+    <LinkTo @route="podcast.episode" @model={{@episode.id}}>
+      <img class="w-full" src={{@episode.imageURL}} alt={{@episode.title}} />
+    </LinkTo>
+  </div>
+  <div class="md:w-1/4 flex flex-col justify-between pt-0">
+    <div class="flex flex-col space-y-6">
+      <h2 class="text-2xl font-normal">{{@episode.title}}</h2>
+      <ListenButton @episode={{@episode}} />
+    </div>
+    <div class="text-base font-normal">
+    <p class="pt-4 md:pt-6">Posted on: {{@episode.postDate}}</p>
+    <p>Duration: {{@episode.duration}}</p>
+    <p>View: <a class="underline" href={{@episode.url}}>on undercurrent.nyc</a></p>
+    </div>
+
+  </div>
+  <div class="w-full md:w-1/2">
+    <p class="text-2xl">Episode N° {{@episode.id}}</p>
+    <p class="text-base py-4 md:py-6">/{{@episode.streamInfo}}</p>
+    <p class="text-base">
+      /In order to receive the episodes as soon as they are published, please
+      subscribe to <i>Undercurrent</i> on <a class="underline" href="https://podcasts.apple.com/us/podcast/undercurrent/id1473030334">iTunes</a>, <a class="underline" href="https://open.spotify.com/show/6rAQTLE7SXndVRxiiu2S2W">Spotify</a>, or <a class="underline" href="https://pca.st/Z04o">PocketCasts</a>.
+    </p>
+  </div>
+</section>
+

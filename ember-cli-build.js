@@ -12,9 +12,9 @@ module.exports = function (defaults) {
         enabled: true,
         cacheInclude: [/.*\.(css|scss)$/, /.tailwind\.js$/],
         plugins: [
-          {
-            module: autoprefixer,
-          },
+          // {
+          //   module: autoprefixer,
+          // },
           tailwind("./app/tailwind/config.js"),
         ],
       },
