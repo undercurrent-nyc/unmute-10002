@@ -1,0 +1,4 @@
+.listen-button.active {
+  @apply underline text-gray-300;
+}
+
