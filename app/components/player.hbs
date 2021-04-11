@@ -1,10 +1,15 @@
 <div class="player w-full 
+  p-6
+  md:p-0
   mb-6
-  flex flex-row 
+  flex 
+  flex-col md:flex-row 
+  justify-between
   rounded
   border-unbrown
   border-2
-
+  h-96
+  md:h-48
   relative z-20"
   {{did-insert this.initializeAudio}}
   >
@@ -13,9 +18,10 @@
     {{on "loadedmetadata" this.parseMetadata}}
     {{on "timeupdate" this.updateCurrentSeconds}}
   />
-  <div class="w-1/3 
+  <div class="w-full md:w-1/3 
+    h-24 md:h-full
     flex flex-row justify-center items-center
-    px-6 space-x-6
+    px-0 md:px-6 space-x-6
     ">
     <div class="flex flex-col flex-grow-0 space-y-6">
       <p class="current-time">{{this.currentTime}}</p>
@@ -51,7 +57,10 @@
       </button>
     </div>
   </div>
-  <div class="w-1/3 flex flex-row space-x-6 justify-center items-center text-unbrown">
+  <div class="w-full md:w-1/3 
+    h-24 md:h-full 
+    flex flex-row space-x-6 justify-center items-center text-unbrown"
+    >
     <button class="h-10 back-button"
       {{on "click" this.backButton}}
       >
@@ -66,8 +75,10 @@
       {{svg-jar "forward" class="h-10 w-10 fill-current"}}
     </button>
   </div>
-  <div class="w-1/3 flex relative">
-    <div class="player-backdrop h-20 top-0 z-10">
+  <div class="w-full md:w-1/3 
+    h-24 md:h-full
+    flex relative">
+    <div class="hidden md:block player-backdrop h-20 top-0 z-10">
       <svg class="absolute h-full w-full left-0">
         <defs>
           <filter id="blur">
