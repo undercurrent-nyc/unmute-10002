@@ -1,0 +1,22 @@
+.nav-dropdown-menu {
+  left: 2.75rem;
+  top: 1.75rem;
+}
+
+.nav-clips.active {
+  @apply text-unred underline;
+}
+
+.nav-about.active, .nav-consultants.active {
+  @apply text-unpurple underline;
+}
+
+.nav-teams.active {
+  @apply text-ungreen underline;
+}
+
+.nav-artists.active {
+  @apply text-unblue underline;
+}
+
+
