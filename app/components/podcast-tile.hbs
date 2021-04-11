@@ -1,4 +1,6 @@
-<section class="flex flex-col md:flex-row w-full space-x-6
+<section class="flex flex-col md:flex-row w-full 
+         space-x-0 md:space-x-6
+         space-y-6 md:space-y-0
          pb-8
          border-solid border-b-2 border-un{{@episode.color}}  
          text-un{{@episode.color}}">
@@ -7,7 +9,7 @@
       <img class="w-full" src={{@episode.imageURL}} alt={{@episode.title}} />
     </LinkTo>
   </div>
-  <div class="md:w-1/4 flex flex-col justify-between pt-0">
+  <div class="md:w-1/4 flex flex-col justify-between">
     <div class="flex flex-col space-y-6">
       <h2 class="text-2xl font-normal">{{@episode.title}}</h2>
       <ListenButton @episode={{@episode}} />
