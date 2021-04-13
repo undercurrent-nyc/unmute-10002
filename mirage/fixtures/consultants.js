@@ -5,7 +5,7 @@ export default [
     pronouns: "she/her/hers",
     url: "https://www.livingcontent.online/",
     instagram: "livingcontent_online",
-    imgUrl: "https://i.imgur.com/laFlmqy.jpg",
+    imgUrl: "https://i.imgur.com/4ECdZZk.jpeg",
     teamId: "web",
   },
   {
@@ -14,7 +14,7 @@ export default [
     pronouns: "she/her/hers",
     url: "https://www.melindawang.com",
     instagram: "melindamanhattan",
-    imgUrl: "https://i.imgur.com/vyGxY01.jpg",
+    imgUrl: "https://i.imgur.com/A4cSkui.jpeg",
     teamId: "stream",
   },
   {
@@ -23,7 +23,7 @@ export default [
     pronouns: "she/her/hers",
     url: "https://www.faithholland.com",
     instagram: "asugarhigh",
-    imgUrl: "https://i.imgur.com/AtqvhmO.jpg",
+    imgUrl: "https://i.imgur.com/ZgQyWzh.jpeg",
     teamId: "profile",
   },
   {
@@ -31,7 +31,7 @@ export default [
     displayName: "Elena Siyanko",
     pronouns: "She/her/hers",
     instagram: "ps21chatham",
-    imgUrl: "https://i.imgur.com/DRbESO4.jpg",
+    imgUrl: "https://i.imgur.com/K8PldOE.jpeg",
     teamId: "key",
   },
   {
@@ -40,7 +40,7 @@ export default [
     pronouns: "they/them/their",
     url: "https://www.raulzamudio.com/",
     facebook: "https://www.facebook.com/proyectosraul.zamudio/",
-    imgUrl: "https://i.imgur.com/JEvRakq.jpg",
+    imgUrl: "https://i.imgur.com/elOFa1M.jpeg",
     teamId: "ram",
   },
   {
@@ -49,7 +49,7 @@ export default [
     pronouns: "she/her/hers",
     url: "https://petravalentova.wordpress.com",
     instagram: "imprintedstory",
-    imgUrl: "https://i.imgur.com/hcTk1dZ.jpg",
+    imgUrl: "https://i.imgur.com/zALTATC.jpeg",
     teamId: "thumbnail",
   },
   {
@@ -59,7 +59,7 @@ export default [
     url: "https://cuny.academia.edu/DrSozitaGoudouna",
     instagram: "sozitagood",
     facebook: "https://www.facebook.com/soz.ueenee",
-    imgUrl: "https://i.imgur.com/5jfRzVz.png",
+    imgUrl: "https://i.imgur.com/gjYnMi1.jpeg",
     teamId: "mouse",
   },
   {
@@ -68,7 +68,7 @@ export default [
     pronouns: "he him",
     url: "https://www.tommcglynnart.com/",
     instagram: "tom_mcglynn",
-    imgUrl: "https://i.imgur.com/WDZNf5v.jpg",
+    imgUrl: "https://i.imgur.com/tstWtg3.jpeg",
     teamId: "branch",
   },
   {
@@ -76,7 +76,7 @@ export default [
     displayName: "Lilly Hern-Fondation",
     pronouns: "she/her/hers",
     teamId: "cloud",
-    imgUrl: "https://i.imgur.com/C89TKiX.jpg",
+    imgUrl: "https://i.imgur.com/Vts7BQs.jpeg",
   },
   {
     id: "melissa-bianca-amore",
@@ -84,6 +84,6 @@ export default [
     pronouns: "she/her/hers",
     teamId: "bug",
     url: "http://www.re-sited.org",
-    imgUrl: "https://i.imgur.com/6xvvNtS.jpg",
+    imgUrl: "https://i.imgur.com/HVKxaeb.jpeg",
   }
 ];
