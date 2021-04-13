@@ -2,7 +2,7 @@
 
 @import "tailwindcss/components";
 
-/* @import "components.css"; */
+@import "components.css";
 
 @import "tailwindcss/utilities";
 
@@ -10,80 +10,9 @@ body {
   @apply font-sans overflow-x-hidden font-abnormal;
 }
 
-.nav-dropdown-menu {
-  left: 2.75rem;
-  top: 1.75rem;
-}
-
-.text-box h2 {
-  @apply text-2xl font-medium;
-}
-
-.text-box p {
-  @apply pb-6 md:pb-8;
-}
-
-.text-box a {
-  @apply underline
-}
-
-
 .unmute-logo {
   width: 28%;
 }
-
-.nav-clips.active {
-  @apply text-unred underline;
-}
-
-.nav-about.active, .nav-consultants.active {
-  @apply text-unpurple underline;
-}
-
-.nav-teams.active {
-  @apply text-ungreen underline;
-}
-
-.nav-artists.active {
-  @apply text-unblue underline;
-}
-
-.video-wrapper iframe {
-  width: 100vw;
-  height: 56.25vw;
-  min-height: 100vh;
-  min-width: 177.77vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.video-wrapper {
-  pointer-events: none;
-  z-index: -1;
-  overflow: hidden;
-  @apply fixed top-0 left-0 w-full h-full 
-}
-
-.video-image-overlay {
-  background-size: 2%;
-  background-image: url(/assets/png/checkerboard.png);
-  background-position: center;
-  image-rendering: pixelated;
-  display: block;
-  @apply absolute top-0 left-0 bottom-0 right-0 z-10 h-full w-full;
-}
-
-.carousel-credit {
-  @apply w-full h-full absolute top-0 left-0 bottom-0 right-0 flex flex-col justify-end;
-}
-
-.carousel-image {
-  z-index: -1;
-  @apply w-full h-full overflow-hidden;
-}
-
 
 .clip-tile.active rect.red.inverse, 
 .clip-tile.active polygon.green, 
@@ -180,12 +109,3 @@ body {
   min-width: 1rem;
 }
 
-aside.sticky-sidebar{
-    will-change: min-height;
-}
-
-aside sidebar__inner{
-    transform: translate(0, 0); /* For browsers don't support translate3d. */
-    transform: translate3d(0, 0, 0);
-    will-change: position, transform;
-}

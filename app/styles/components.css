@@ -1,1 +1,7 @@
+@import "./components/carousel.css";
+@import "./components/listen-button.css";
+@import "./components/nav.css";
+@import "./components/player.css";
+@import "./components/sticky-sidebar.css";
+@import "./components/text-box.css";
 @import "./components/video-background.css";

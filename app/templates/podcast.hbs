@@ -1,0 +1,9 @@
+<Container @sticky={{true}}>
+  <LinkTo @route="podcast" class="text-right nav-podcast block md:hidden text-sm font-semibold pb-4">/podcast</LinkTo>
+  {{outlet}}
+  <div class="w-full flex flex-col space-y-8">
+    {{#each @model as |episode|}}
+      <PodcastTile @episode={{episode}} />
+    {{/each}}
+  </div>
+</Container>
