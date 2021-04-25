@@ -1,5 +1,17 @@
 export default [
   {
+    id: "3",
+    color: "purple",
+    sound: "https://chtbl.com/track/9474E/https://dts.podtrac.com/redirect.mp3/static1.squarespace.com/static/55199391e4b0f81fe422a536/t/6084e3283348ca47ee38d115/1619321703951/e21_mixdown.mp3",
+    duration: "51:01",
+    postDate: "04/25",
+    number: 3,
+    url: "http://feedproxy.google.com/~r/undercurrent70/podcast/~3/Mo1hZ41A74E/unmute-consultant-roundtable",
+    imageURL: "https://images.squarespace-cdn.com/content/v1/55199391e4b0f81fe422a536/1619321461198-UJR3UAS5NKF8B4NXUF99/ke17ZwdGBToddI8pDm48kELUEblc2-kxZnB8phLyD3h7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmTuD4Ig-8XL4mlDhs86MQEreg_waYPma1hx25QTzkldn-B0xVFhlhI-65FimmDSFv/Artboard+1%403x.png?format=1500w", 
+    title: "UN/MUTE - Consultants Roundtable",
+    streamInfo: "Adriana and Moacir facilitate a discussion with representatives of Team Arrow, the ten consultants who each collaborated with one team in UN/MUTE 10002. Adriana Blidaru, Sozita Goudouna, Elena Siyanko, Petra Valentova, and Raúl Zamudio opined on opportunities and challenges for solidarity in art during the pandemic and afterward.",
+  },
+  {
     id: "2",
     color: "red",
     sound: "https://chtbl.com/track/9474E/https://dts.podtrac.com/redirect.mp3/static1.squarespace.com/static/55199391e4b0f81fe422a536/t/606aac44a898f65e703b3c82/1617603825842/e20_mixdown.mp3",
