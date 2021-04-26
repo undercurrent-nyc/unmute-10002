@@ -14,6 +14,9 @@ module.exports = function (environment) {
         docs: "app/markdown"
       },
     },
+    fastboot: {
+      hostWhitelist: ["unmute.nyc", "www.unmute.nyc", /^localhost:\d+$/, "https://peaceful-chandrasekhar-5d3178.netlify.app/"],
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

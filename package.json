@@ -34,6 +34,7 @@
     "ember-cli-babel": "^7.23.0",
     "ember-cli-dependency-checker": "^3.2.0",
     "ember-cli-dotenv": "^3.1.0",
+    "ember-cli-fastboot": "^2.2.3",
     "ember-cli-htmlbars": "^5.3.1",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-markdown-resolver": "^0.1.3",
