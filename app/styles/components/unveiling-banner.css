@@ -1,0 +1,16 @@
+.unveiling-banner {
+  min-height: 5rem;
+}
+
+.unveiling-banner-video-wrapper {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+.unveiling-banner-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
