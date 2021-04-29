@@ -14,7 +14,6 @@ export default class UnveilingBannerComponent extends Component {
   @action makeWaves() {
     this.animate();
     setInterval(() => {
-      console.log("running this.animate");
       this.animate();
     }, 10000);
   }

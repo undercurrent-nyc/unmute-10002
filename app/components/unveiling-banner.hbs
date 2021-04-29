@@ -1,4 +1,44 @@
-<aside class="w-full flex flex-row justify-between mb-6 space-x-6">
+<aside class="block md:hidden
+  w-full flex flex-col
+  ">
+  <div class="flex flex-row justify-between space-x-2 pb-2">
+    <div class="noise-background w-4/5 unveiling-banner flex-grow-1 
+      bg-black text-white
+      flex flex-col justify-center items-center
+      p-2 pt-0
+      "
+      role="button"
+      {{on "click" this.toggleVideo}}
+      {{did-insert this.makeWaves}}
+      >
+    {{svg-jar "unveiling-banner"}}
+    </div>
+    <div class="noise-background w-1/5 flex justify-center items-center "
+                   >
+      <a href="https://www.facebook.com/events/285086856576731/" class="hover:text-unbrown {{if this.isShowing "text-unbrown" "text-unpurple"}}">
+        {{svg-jar "unveiling-banner-facebook-button" class="h-full w-full fill-current"}}
+      </a>
+    </div>
+  </div>
+  {{#if this.isShowing}}
+      <div class="noise-background p-2">
+        <div class="h-full w-full unveiling-banner-video-wrapper">
+          <iframe 
+            class="unveiling-banner-iframe"
+            title="Un/Mute-10002 Unveiling Trailer" 
+            src="https://player.vimeo.com/video/542923695?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            allow="autoplay; fullscreen; picture-in-picture"
+            frameborder="0" allowfullscreen></iframe>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+      </div>
+      <div class="py-3 w-full h-full flex-grow-1 flex flex-col justify-end text-unpurple">
+        <h3 class="text-xl font-bold pb-2">UN/MUTE Unveiling</h3>
+        <p>The ten-week Un/Mute virtual residency is complete, and Undercurrent invites you to participate in the unveiling of ten projects from the 20 participating artists. <a href="https://www.facebook.com/events/285086856576731/" class="underline">RSVP on Facebook</a>, and we'll see you on May 9th!</p>
+      </div>
+      {{/if}}
+</aside>
+<aside class="hidden md:block w-full flex flex-row justify-between mb-6 space-x-6">
   <div class="noise-background w-10/12 unveiling-banner flex-grow-1 
     bg-black text-white
     flex flex-col justify-center items-center
@@ -14,8 +54,8 @@
       <div class="h-full w-full unveiling-banner-video-wrapper">
         <iframe 
           class="unveiling-banner-iframe"
-          title="vimeo-player" 
-          src="https://player.vimeo.com/video/11387248" 
+          title="Un/Mute-10002 Unveiling Trailer" 
+          src="https://player.vimeo.com/video/542923695?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
           allow="autoplay; fullscreen; picture-in-picture"
           frameborder="0" allowfullscreen></iframe>
         <script src="https://player.vimeo.com/api/player.js"></script>
@@ -31,17 +71,17 @@
     </div>
     {{/if}}
   </div>
-  <div class="w-2/12 flex-grow-0 flex flex-col">
+  <div class="w-2/12 flex flex-col">
     <div class="noise-background w-full flex justify-center items-center "
                    >
-      <a href="http://undercurrent.nyc" class={{if this.isShowing "text-unbrown" "text-unpurple"}}>
+      <a href="https://www.facebook.com/events/285086856576731/" class="hover:text-unbrown {{if this.isShowing "text-unbrown" "text-unpurple"}}">
         {{svg-jar "unveiling-banner-facebook-button" class="h-full w-full fill-current"}}
       </a>
     </div>
     {{#if this.isShowing}}
     <div class="w-full h-full flex-grow-1 flex flex-col justify-end text-unpurple space-y-4">
-      <h3 class="text-xl font-bold">UN/MUTE</h3>
-      <p>Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. Text. </p>
+      <h3 class="text-xl font-bold">UN/MUTE Unveiling</h3>
+      <p>The ten-week Un/Mute virtual residency is complete, and Undercurrent invites you to participate in the unveiling of ten projects from the 20 participating artists. <a href="https://www.facebook.com/events/285086856576731/" class="underline">RSVP on Facebook</a>, and we'll see you on May 9th!</p>
     </div>
     {{/if}}
   </div>
